@@ -28,7 +28,7 @@ const categories = Array.isArray(fm.categories) ? fm.categories : [];
           {getCategoryLabelBn(category)}
         </a>
       ))}
-      {fm.hot && <span class="rounded bg-red-100 px-2 py-0.5 text-red-700">হট</span>}
+      {/* Removed 'হট' badge from all post cards except in Hot Jobs section */}
     </div>
 
     {fm.image && (

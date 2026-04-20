@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 // import FilterBar from '../../../../components/FilterBar.astro';
-import HotStrip from '../../../../components/HotStrip.astro';
+// import HotStrip from '../../../../components/HotStrip.astro';
 import PostCard from '../../../../components/PostCard.astro';
 import Pagination from '../../../../components/Pagination.astro';
 import Sidebar from '../../../../components/Sidebar.astro';
@@ -51,7 +51,7 @@ const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
     {/* <FilterBar categories={categories} /> */}
     <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
       <div>
-        <HotStrip posts={hotPosts} />
+        {/* <HotStrip posts={hotPosts} /> */}
         <div class="space-y-6">
           {pagedPosts.map((post) => (
             <PostCard post={post} />
