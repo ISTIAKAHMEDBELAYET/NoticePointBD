@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-import FilterBar from '../../../../components/FilterBar.astro';
+// import FilterBar from '../../../../components/FilterBar.astro';
 import HotStrip from '../../../../components/HotStrip.astro';
 import PostCard from '../../../../components/PostCard.astro';
 import Pagination from '../../../../components/Pagination.astro';
@@ -48,7 +48,7 @@ const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
 >
   <section class="my-8">
     <h1 class="mb-6 text-3xl font-bold">{getCategoryLabelBn(category)} - পেজ {currentPage}</h1>
-    <FilterBar categories={categories} />
+    {/* <FilterBar categories={categories} /> */}
     <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
       <div>
         <HotStrip posts={hotPosts} />
