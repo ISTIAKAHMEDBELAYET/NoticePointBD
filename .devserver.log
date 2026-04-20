@@ -1,0 +1,354 @@
+
+> noticepointbd@1.0.0 dev
+> astro dev --host 127.0.0.1 --port 4321
+
+   astro  v2.10.15 started in 1364ms
+  
+  ┃ Local    http://127.0.0.1:4321/
+  
+05:16:49 PM [content] Watching src/content/ for changes
+05:16:49 PM [content] Types generated
+05:16:50 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.astro/types.d.ts
+05:16:51 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:17:56 PM [serve] 404                         /images/logo.png
+[2K[1G[1A05:17:56 PM [serve] 404                         /images/logo.png (x2)
+05:22:16 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:22:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro style
+05:22:39 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.astro/types.d.ts
+05:22:40 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:22:40 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:22:41 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:22:42 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A05:22:42 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A05:22:42 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A05:22:42 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A05:22:43 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+[2K[1G[1A05:22:43 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x9)
+[2K[1G[1A05:22:44 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x10)
+05:24:28 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:25:13 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro style
+05:25:20 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:25:23 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:25:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.astro/types.d.ts
+05:25:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:25:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:25:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:25:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+05:26:12 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:26:56 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/public/images/logo-animated.svg
+05:27:06 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:27:12 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:27:54 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro style
+05:28:00 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:28:04 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:28:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:28:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+05:28:38 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:28:41 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:30:29 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro style
+05:30:41 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:32:43 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+[2K[1G[1A05:32:46 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x3)
+05:33:02 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:33:16 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:34:04 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+[2K[1G[1A05:34:12 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x3)
+[2K[1G[1A05:34:37 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x4)
+[2K[1G[1A05:34:43 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x5)
+05:34:55 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:35:05 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:35:37 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro style
+05:35:55 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.astro/types.d.ts
+05:35:55 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:35:56 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:36:01 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:36:01 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A05:36:01 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A05:36:01 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A05:36:02 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A05:36:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+05:36:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/dist/index.html
+05:36:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:36:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:36:04 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:36:05 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A05:36:06 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+05:36:20 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/Header.astro
+05:36:20 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/layouts/BaseLayout.astro
+05:36:21 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:36:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.astro/types.d.ts
+05:36:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:36:37 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:36:38 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:36:38 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A05:36:39 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A05:36:40 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A05:36:40 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A05:36:40 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+05:43:57 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:44:05 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/notice/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:05 PM [serve] 404                        /category/notice/
+05:44:05 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:44:07 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:44:10 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/teletalk-application/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:10 PM [serve] 404          /category/teletalk-application/
+05:44:10 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:44:13 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:44:20 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:20 PM [serve] 404                     /category/bank-jobs/
+05:44:20 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:44:27 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/all-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:27 PM [serve] 404                      /category/all-jobs/
+05:44:27 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:44:31 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:31 PM [serve] 404                     /category/bank-jobs/
+05:44:32 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:44:37 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:37 PM [serve] 404                     /category/bank-jobs/
+05:44:39 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:44:39 PM [serve] 404                     /category/bank-jobs/
+05:46:10 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:46:51 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:47:01 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro
+05:47:01 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro
+05:47:07 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:47:16 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+05:47:16 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:47:51 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:48:06 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+05:48:06 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:48:07 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:48:16 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro
+05:48:18 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:48:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+05:48:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:50:22 PM [serve] 404                         /images/logo.png
+[2K[1G[1A05:50:22 PM [serve] 404                         /images/logo.png (x2)
+[2K[1G[1A05:50:22 PM [serve] 404                         /images/logo.png (x3)
+05:50:27 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:50:31 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:50:34 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro
+[2K[1G[1A05:50:34 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro (x2)
+05:50:38 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+05:50:45 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+05:54:33 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:54:38 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+[2K[1G[1A05:54:49 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x3)
+[2K[1G[1A05:54:54 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x4)
+05:54:57 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+05:54:57 PM [serve] 404                     /category/bank-jobs/
+05:54:58 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A05:56:05 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+05:56:24 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A05:56:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A05:56:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A05:56:26 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+06:02:00 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/W
+06:02:28 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:15:01 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A06:15:32 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+06:17:02 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:19:03 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:19:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A06:19:03 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A06:19:04 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A06:19:04 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A06:19:05 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A06:19:05 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A06:19:06 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A06:19:06 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+06:19:10 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+06:19:22 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:19:42 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A06:19:56 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+[2K[1G[1A06:20:06 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x3)
+[2K[1G[1A06:20:11 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x4)
+[2K[1G[1A06:20:33 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x5)
+[2K[1G[1A06:20:41 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x6)
+[2K[1G[1A06:20:46 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x7)
+06:22:29 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:23:19 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:23:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:28:01 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:28:14 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:30:31 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:32:10 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A06:32:11 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A06:32:11 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A06:32:11 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A06:32:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A06:32:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A06:32:13 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A06:32:13 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+[2K[1G[1A06:32:13 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x9)
+[2K[1G[1A06:32:14 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x10)
+[2K[1G[1A06:32:14 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x11)
+[2K[1G[1A06:32:15 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x12)
+[2K[1G[1A06:32:15 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x13)
+[2K[1G[1A06:32:16 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x14)
+[2K[1G[1A06:32:16 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x15)
+[2K[1G[1A06:32:16 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x16)
+[2K[1G[1A06:32:17 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x17)
+[2K[1G[1A06:32:17 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x18)
+[2K[1G[1A06:32:18 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x19)
+[2K[1G[1A06:32:18 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x20)
+[2K[1G[1A06:32:18 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x21)
+[2K[1G[1A06:32:19 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x22)
+[2K[1G[1A06:32:19 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x23)
+[2K[1G[1A06:32:20 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x24)
+[2K[1G[1A06:32:20 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x25)
+[2K[1G[1A06:32:21 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x26)
+[2K[1G[1A06:32:21 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x27)
+[2K[1G[1A06:32:21 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x28)
+[2K[1G[1A06:32:22 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x29)
+[2K[1G[1A06:32:22 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x30)
+[2K[1G[1A06:32:23 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x31)
+[2K[1G[1A06:32:23 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x32)
+[2K[1G[1A06:32:23 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x33)
+[2K[1G[1A06:32:24 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x34)
+[2K[1G[1A06:32:24 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x35)
+[2K[1G[1A06:32:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x36)
+[2K[1G[1A06:32:25 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x37)
+[2K[1G[1A06:32:26 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x38)
+[2K[1G[1A06:32:26 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x39)
+[2K[1G[1A06:32:26 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x40)
+[2K[1G[1A06:32:27 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x41)
+[2K[1G[1A06:32:27 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x42)
+[2K[1G[1A06:32:28 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x43)
+[2K[1G[1A06:32:28 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x44)
+[2K[1G[1A06:32:28 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x45)
+[2K[1G[1A06:32:29 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x46)
+[2K[1G[1A06:32:29 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x47)
+[2K[1G[1A06:32:30 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x48)
+[2K[1G[1A06:32:30 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x49)
+[2K[1G[1A06:32:30 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x50)
+[2K[1G[1A06:32:31 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x51)
+[2K[1G[1A06:32:31 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x52)
+[2K[1G[1A06:32:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x53)
+[2K[1G[1A06:32:32 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x54)
+[2K[1G[1A06:32:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x55)
+[2K[1G[1A06:32:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x56)
+[2K[1G[1A06:32:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x57)
+[2K[1G[1A06:32:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x58)
+[2K[1G[1A06:32:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x59)
+[2K[1G[1A06:32:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x60)
+[2K[1G[1A06:32:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x61)
+[2K[1G[1A06:32:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x62)
+[2K[1G[1A06:32:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x63)
+[2K[1G[1A06:32:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x64)
+[2K[1G[1A06:32:37 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x65)
+[2K[1G[1A06:32:37 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x66)
+[2K[1G[1A06:32:38 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x67)
+[2K[1G[1A06:32:38 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x68)
+[2K[1G[1A06:32:38 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x69)
+06:32:45 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+[2K[1G[1A06:33:31 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro (x2)
+06:34:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:34:48 PM [serve] 404                         /images/logo.png
+[2K[1G[1A06:34:49 PM [serve] 404                         /images/logo.png (x2)
+[2K[1G[1A06:34:50 PM [serve] 404                         /images/logo.png (x3)
+[2K[1G[1A06:34:53 PM [serve] 404                         /images/logo.png (x4)
+[2K[1G[1A06:35:04 PM [serve] 404                         /images/logo.png (x5)
+[2K[1G[1A06:35:07 PM [serve] 404                         /images/logo.png (x6)
+[2K[1G[1A06:35:15 PM [serve] 404                         /images/logo.png (x7)
+06:35:20 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/teletalk-application/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+06:35:20 PM [serve] 404          /category/teletalk-application/
+06:35:21 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+06:35:21 PM [serve] 404                     /category/bank-jobs/
+06:36:42 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A06:36:43 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A06:36:43 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+[2K[1G[1A06:36:43 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x4)
+[2K[1G[1A06:36:44 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x5)
+[2K[1G[1A06:36:44 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x6)
+[2K[1G[1A06:36:45 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x7)
+[2K[1G[1A06:36:45 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x8)
+[2K[1G[1A06:36:45 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x9)
+[2K[1G[1A06:36:46 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x10)
+[2K[1G[1A06:36:46 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x11)
+[2K[1G[1A06:36:47 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x12)
+06:37:23 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:38:20 PM [serve] 404                         /images/logo.png
+[2K[1G[1A06:38:20 PM [serve] 404                         /images/logo.png (x2)
+[2K[1G[1A06:38:36 PM [serve] 404                         /images/logo.png (x3)
+[2K[1G[1A06:38:36 PM [serve] 404                         /images/logo.png (x4)
+[2K[1G[1A06:38:36 PM [serve] 404                         /images/logo.png (x5)
+06:39:34 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:41:04 PM [serve] 404                         /images/logo.png
+[2K[1G[1A06:41:06 PM [serve] 404                         /images/logo.png (x2)
+06:41:11 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+[2K[1G[1A06:41:17 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x2)
+[2K[1G[1A06:41:21 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json (x3)
+06:41:33 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/bank-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+06:41:33 PM [serve] 404                     /category/bank-jobs/
+06:41:33 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+06:41:34 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:41:37 PM [serve] 404 /.well-known/appspecific/com.chrome.devtools.json
+06:42:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:42:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A06:42:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A06:42:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+06:42:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+[2K[1G[1A06:42:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log (x2)
+06:42:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+[2K[1G[1A06:42:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x2)
+[2K[1G[1A06:42:36 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log (x3)
+06:43:17 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:43:17 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:44:14 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:44:36 PM [serve] 404                         /images/logo.png
+[2K[1G[1A06:44:36 PM [serve] 404                         /images/logo.png (x2)
+[2K[1G[1A06:44:37 PM [serve] 404                         /images/logo.png (x3)
+06:45:21 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:45:21 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:45:52 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:45:52 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:46:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:46:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:47:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:47:12 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:48:21 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/FilterBar.astro
+06:49:02 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+06:53:49 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/FilterBar.astro
+06:53:49 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+[2K[1G[1A06:55:13 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro (x2)
+[2K[1G[1A06:55:13 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro (x3)
+06:55:22 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:55:22 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:55:31 PM [serve] 404                         /images/logo.png
+[2K[1G[1A06:55:38 PM [serve] 404                         /images/logo.png (x2)
+06:56:19 PM [getStaticPaths] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/category/all-jobs/`.
+
+Possible dynamic routes being matched: src/pages/category/[category].astro.
+06:56:19 PM [serve] 404                      /category/all-jobs/
+06:56:31 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:56:31 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log
+06:56:33 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+06:56:35 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search-copy.astro
+[2K[1G[1A06:56:54 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search-copy.astro (x2)
+07:01:44 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro
+[2K[1G[1A07:02:38 PM [astro] reload C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro (x2)
+07:03:09 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.err.log
+07:03:09 PM [astro] update C:/Users/stsup/OneDrive/Documents/NoticePointBD/.devserver.log

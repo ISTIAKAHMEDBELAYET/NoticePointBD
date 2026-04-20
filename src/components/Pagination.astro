@@ -12,30 +12,30 @@ const buildLink = (page) => {
 ---
 
 {totalPages > 1 && (
-  <nav class="my-8 flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
+  <nav class="my-8 flex flex-wrap items-center justify-center gap-2 text-[16px]" aria-label="Pagination">
     {currentPage > 1 ? (
-      <a rel="prev" href={buildLink(currentPage - 1)} class="rounded border px-3 py-1 hover:bg-gray-100">
+      <a rel="prev" href={buildLink(currentPage - 1)} class="rounded border border-[#0274be] px-3 py-1.5 text-[#0274be] hover:bg-[#0274be] hover:text-white">
         &lt;- Prev
       </a>
     ) : (
-      <span class="rounded border border-gray-200 px-3 py-1 text-gray-400">&lt;- Prev</span>
+      <span class="rounded border border-gray-200 px-3 py-1.5 text-gray-400">&lt;- Prev</span>
     )}
 
     {pageNumbers.map((page) => (
       <a
         href={buildLink(page)}
-        class={`rounded px-3 py-1 ${page === currentPage ? 'bg-blue-700 text-white' : 'border hover:bg-gray-100'}`}
+        class={`rounded px-3 py-1.5 ${page === currentPage ? 'bg-[#0274be] text-white' : 'border border-[#0274be] text-[#0274be] hover:bg-[#0274be] hover:text-white'}`}
       >
         {page}
       </a>
     ))}
 
     {currentPage < totalPages ? (
-      <a rel="next" href={buildLink(currentPage + 1)} class="rounded border px-3 py-1 hover:bg-gray-100">
+      <a rel="next" href={buildLink(currentPage + 1)} class="rounded border border-[#0274be] px-3 py-1.5 text-[#0274be] hover:bg-[#0274be] hover:text-white">
         Next -&gt;
       </a>
     ) : (
-      <span class="rounded border border-gray-200 px-3 py-1 text-gray-400">Next -&gt;</span>
+      <span class="rounded border border-gray-200 px-3 py-1.5 text-gray-400">Next -&gt;</span>
     )}
   </nav>
 )}

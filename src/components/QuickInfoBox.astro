@@ -1,14 +1,27 @@
----
+﻿---
 const { frontmatter = {} } = Astro.props;
+
+const infoItems = [
+  { label: 'পদের সংখ্যা', value: frontmatter.vacancies },
+  { label: 'আবেদনের শেষ তারিখ', value: frontmatter.deadline },
+  { label: 'আবেদনের ধরন', value: frontmatter.applyType },
+  { label: 'প্রতিষ্ঠান', value: frontmatter.organization },
+  { label: 'ফলাফল প্রকাশ', value: frontmatter.resultDate },
+].filter((item) => item.value);
 ---
 
-<section class="my-6 rounded-lg border border-blue-100 bg-blue-50 p-4">
-  <h2 class="mb-3 text-lg font-bold text-blue-900">Quick Info</h2>
-  <div class="grid gap-2 text-sm text-blue-900 md:grid-cols-2">
-    {frontmatter.vacancies && <p><strong>Podir Sonkha:</strong> {frontmatter.vacancies}</p>}
-    {frontmatter.deadline && <p><strong>Avedon Shesh Tarikh:</strong> {frontmatter.deadline}</p>}
-    {frontmatter.applyType && <p><strong>Avedon Dhoron:</strong> {frontmatter.applyType}</p>}
-    {frontmatter.organization && <p><strong>Shongstha:</strong> {frontmatter.organization}</p>}
-    {frontmatter.resultDate && <p><strong>Result Date:</strong> {frontmatter.resultDate}</p>}
-  </div>
-</section>
+{infoItems.length > 0 && (
+  <section class="my-6 job-info-box rounded-[14px] border border-gray-200 bg-white p-4 shadow-[0_10px_25px_rgba(0,0,0,0.05)]">
+    <h2 class="mb-4 text-[22px] font-bold text-[#0f172a]">গুরুত্বপূর্ণ তথ্য</h2>
+    <div class="job-info-grid grid gap-3 md:grid-cols-2">
+      {infoItems.map((item) => (
+        <div class="info-card flex min-h-[82px] items-center rounded-[12px] bg-[#f8fafc] px-4 py-3">
+          <div>
+            <p class="text-[16px] font-semibold text-[#334155]">{item.label}</p>
+            <p class="text-[18px] font-semibold text-[#15803d]">{item.value}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+)}

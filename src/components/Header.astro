@@ -1,166 +1,207 @@
 ---
-const chakriLinks = [
-  ['government-jobs', 'সরকারি চাকরি'],
-  ['bank-jobs', 'ব্যাংক চাকরি'],
-  ['private-jobs', 'প্রাইভেট চাকরি'],
-  ['defence-jobs', 'ডিফেন্স চাকরি'],
+const privateLinks = [
   ['ngo-jobs', 'এনজিও চাকরি'],
+  ['pharmaceuticals-jobs', 'ফার্মাসিউটিক্যালস চাকরি'],
+  ['group-company-jobs', 'গ্রুপ অব কোম্পানি চাকরি'],
+];
+
+const moreLinks = [
   ['university-jobs', 'বিশ্ববিদ্যালয় চাকরি'],
-  ['hot-jobs', 'হট জবস'],
-  ['teletalk-application', 'অনলাইন আবেদন'],
-];
-
-const vortiLinks = [
-  ['admission', 'সকল ভর্তি'],
-  ['university-admission', 'বিশ্ববিদ্যালয় ভর্তি'],
-  ['medical-admission', 'মেডিকেল ভর্তি'],
-  ['college-admission', 'কলেজ ভর্তি'],
-  ['school-admission', 'স্কুল ভর্তি'],
-];
-
-const folafolLinks = [
-  ['result', 'সকল ফলাফল'],
-  ['ssc-result', 'এসএসসি ফলাফল'],
-  ['hsc-result', 'এইচএসসি ফলাফল'],
-  ['university-result', 'বিশ্ববিদ্যালয় ফলাফল'],
-  ['job-exam-result', 'চাকরি পরীক্ষার ফলাফল'],
+  ['defence-jobs', 'ডিফেন্স জবস'],
+  ['weekly-jobs', 'সাপ্তাহিক চাকরির খবর'],
+  ['search', 'Search জবস'],
+  ['age-calculator', 'Age Calculator'],
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-gray-300 bg-white">
-  <div class="mx-auto flex max-w-[1200px] items-center justify-between px-2 py-3">
-    <a class="flex items-center gap-3" href="/">
-      <img src="/images/logo-animated.svg?v=20260420b" alt="NoticePointBD লোগো" class="h-14 w-auto md:h-16" loading="eager" />
-    </a>
-    <button
-      id="mobile-menu-open"
-      class="rounded border border-gray-300 px-4 py-2 text-base font-semibold text-gray-700 md:hidden"
-      aria-label="মোবাইল মেনু খুলুন"
-    >
-      মেনু
-    </button>
-  </div>
-
-  <div class="hidden border-t border-gray-300 bg-[#1f2937] md:block">
-    <nav id="desktop-main-nav" class="mx-auto flex max-w-[1200px] items-center gap-2 px-2 py-2 text-[17px] font-medium text-white">
-      <a class="rounded px-2 py-1 hover:bg-white/15" href="/">হোম</a>
-      <details class="group relative nav-dropdown">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">চাকরি</summary>
-        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
-          {chakriLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <details class="group relative nav-dropdown">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">ভর্তি</summary>
-        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
-          {vortiLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <details class="group relative nav-dropdown">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">ফলাফল</summary>
-        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
-          {folafolLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <a class="rounded px-2 py-1 hover:bg-white/15" href="/category/blog/">ব্লগ</a>
-      <a class="rounded px-2 py-1 hover:bg-white/15" href="/age-calculator/">Age Calculator</a>
-      <a class="rounded px-2 py-1 hover:bg-white/15" href="/search/">Smart Search</a>
-      <a class="ml-auto rounded px-2 py-1 hover:bg-white/15" href="/search/" aria-label="Search">
-        🔍
+<header id="masthead" class="site-header grid-container hidden border-b border-gray-300 bg-white md:block" aria-label="Site">
+  <div class="inside-header grid-container">
+    <div class="site-logo">
+      <a href="/" rel="home">
+        <img
+          class="header-image is-logo-image"
+          src="/images/logo-animated.svg"
+          alt="NoticePointBD লোগো"
+          width="390"
+          height="125"
+          loading="eager"
+        />
       </a>
-    </nav>
+    </div>
   </div>
 </header>
 
-  <div id="mobile-drawer" class="fixed inset-0 z-[70] hidden md:hidden">
-  <button id="mobile-menu-overlay" class="absolute inset-0 bg-black/45" aria-label="মেনু বন্ধ করুন"></button>
-  <div class="relative ml-auto h-full w-[88%] max-w-[360px] overflow-y-auto bg-white p-4">
-    <div class="mb-4 flex items-center justify-between border-b border-gray-200 pb-3">
-      <img src="/images/logo-animated.svg?v=20260420b" alt="NoticePointBD লোগো" class="h-10 w-auto" />
-      <button id="mobile-menu-close" class="rounded border border-gray-300 px-3 py-1 text-sm">বন্ধ</button>
+<nav
+  class="auto-hide-sticky main-navigation grid-container has-menu-bar-items sub-menu-right"
+  id="site-navigation"
+  aria-label="Primary"
+  itemtype="https://schema.org/SiteNavigationElement"
+  itemscope
+>
+  <div class="inside-navigation grid-container">
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+      <span class="gp-icon icon-menu-bars" aria-hidden="true">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+          <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+        </svg>
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+          <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+        </svg>
+      </span>
+      <span class="mobile-menu">মেন্যু</span>
+    </button>
+
+    <div id="primary-menu" class="main-nav">
+      <ul id="menu-primary-1" class="menu sf-menu">
+        <li class="menu-item current-menu-item current_page_item menu-item-home"><a href="/" aria-current="page">হোম</a></li>
+        <li class="menu-item"><a href="/category/all-jobs/">সকল চাকরি</a></li>
+        <li class="menu-item"><a href="/category/government-jobs/">সরকারি চাকরি</a></li>
+        <li class="menu-item"><a href="/category/bank-jobs/">ব্যাংক চাকরি</a></li>
+
+        <li class="menu-item menu-item-has-children nav-item-has-children">
+          <a href="/category/private-jobs/">
+            প্রাইভেট চাকরি
+            <span role="presentation" class="dropdown-menu-toggle">
+              <span class="gp-icon icon-arrow" aria-hidden="true">
+                <svg viewBox="0 0 330 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                  <path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <ul class="sub-menu" id="menu-item-private-sub-menu">
+            {privateLinks.map(([slug, label]) => (
+              <li class="menu-item"><a href={`/category/${slug}/`}>{label}</a></li>
+            ))}
+          </ul>
+        </li>
+
+        <li class="menu-item"><a href="/category/teletalk-application/">অনলাইন আবেদন</a></li>
+        <li class="menu-item"><a href="/category/hot-jobs/">হট জবস</a></li>
+        <li class="menu-item"><a href="/category/notice/">নোটিশ</a></li>
+
+        <li class="menu-item menu-item-has-children nav-item-has-children">
+          <a href="#">
+            আরও
+            <span role="presentation" class="dropdown-menu-toggle">
+              <span class="gp-icon icon-arrow" aria-hidden="true">
+                <svg viewBox="0 0 330 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                  <path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <ul class="sub-menu" id="menu-item-more-sub-menu">
+            {moreLinks.map(([slug, label]) => (
+              <li class="menu-item"><a href={slug === 'search' || slug === 'age-calculator' ? `/${slug}/` : `/category/${slug}/`}>{label}</a></li>
+            ))}
+          </ul>
+        </li>
+      </ul>
     </div>
 
-    <nav id="mobile-main-nav" class="space-y-2 text-[16px] font-medium text-gray-800">
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/">হোম</a>
-      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
-        <summary class="cursor-pointer">চাকরি ক্যাটাগরি</summary>
-        <ul class="mt-2 space-y-1 text-sm">
-          {chakriLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
-        <summary class="cursor-pointer">ভর্তি ক্যাটাগরি</summary>
-        <ul class="mt-2 space-y-1 text-sm">
-          {vortiLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
-        <summary class="cursor-pointer">ফলাফল ক্যাটাগরি</summary>
-        <ul class="mt-2 space-y-1 text-sm">
-          {folafolLinks.map(([slug, label]) => (
-            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
-          ))}
-        </ul>
-      </details>
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/category/blog/">ব্লগ</a>
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/search/">Smart Search</a>
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a>
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/about/">আমাদের সম্পর্কে</a>
-      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/contact/">যোগাযোগ</a>
-    </nav>
+    <div class="menu-bar-items">
+      <span class="menu-bar-item">
+        <a href="/search/" aria-label="Open search">
+          <span class="gp-icon icon-search" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"></path>
+            </svg>
+          </span>
+        </a>
+      </span>
+    </div>
   </div>
-</div>
+</nav>
+
+<nav
+  id="mobile-header"
+  itemtype="https://schema.org/SiteNavigationElement"
+  itemscope
+  class="main-navigation mobile-header-navigation has-branding has-menu-bar-items"
+>
+  <div class="inside-navigation grid-container grid-parent">
+    <div class="site-logo mobile-header-logo">
+      <a href="/" title="NoticePointBD" rel="home">
+        <img src="/images/logo-animated.svg" alt="NoticePointBD" class="is-logo-image" width="390" height="125" />
+      </a>
+    </div>
+
+    <button id="mobile-menu-toggle" class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+      <span class="gp-icon icon-menu-bars" aria-hidden="true">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+          <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+        </svg>
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+          <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+        </svg>
+      </span>
+      <span class="mobile-menu">মেন্যু</span>
+    </button>
+
+    <div id="mobile-menu" class="main-nav">
+      <ul class="menu sf-menu">
+        <li class="menu-item"><a href="/">হোম</a></li>
+        <li class="menu-item"><a href="/category/all-jobs/">সকল চাকরি</a></li>
+        <li class="menu-item"><a href="/category/government-jobs/">সরকারি চাকরি</a></li>
+        <li class="menu-item"><a href="/category/bank-jobs/">ব্যাংক চাকরি</a></li>
+        <li class="menu-item"><a href="/category/private-jobs/">প্রাইভেট চাকরি</a></li>
+        <li class="menu-item"><a href="/category/teletalk-application/">অনলাইন আবেদন</a></li>
+        <li class="menu-item"><a href="/category/hot-jobs/">হট জবস</a></li>
+        <li class="menu-item"><a href="/category/notice/">নোটিশ</a></li>
+        <li class="menu-item"><a href="/search/">Search জবস</a></li>
+        <li class="menu-item"><a href="/age-calculator/">Age Calculator</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-bar-items">
+      <span class="menu-bar-item">
+        <a href="/search/" aria-label="Open search">
+          <span class="gp-icon icon-search" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"></path>
+            </svg>
+          </span>
+        </a>
+      </span>
+    </div>
+  </div>
+</nav>
 
 <script>
-  const drawer = document.getElementById('mobile-drawer');
-  const openButton = document.getElementById('mobile-menu-open');
-  const closeButton = document.getElementById('mobile-menu-close');
-  const overlay = document.getElementById('mobile-menu-overlay');
-
-  const openMenu = () => drawer?.classList.remove('hidden');
-  const closeMenu = () => drawer?.classList.add('hidden');
-
-  openButton?.addEventListener('click', openMenu);
-  closeButton?.addEventListener('click', closeMenu);
-  overlay?.addEventListener('click', closeMenu);
-  window.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
-  });
-
-  const desktopDropdowns = [...document.querySelectorAll('#desktop-main-nav .nav-dropdown')];
-  desktopDropdowns.forEach((dropdown) => {
-    dropdown.addEventListener('toggle', () => {
-      if (!dropdown.open) return;
-      desktopDropdowns.forEach((other) => {
-        if (other !== dropdown) other.removeAttribute('open');
-      });
+  const desktopNavParents = document.querySelectorAll('#site-navigation .menu-item-has-children');
+  desktopNavParents.forEach((parent) => {
+    const link = parent.querySelector(':scope > a');
+    link?.addEventListener('click', (event) => {
+      if (!window.matchMedia('(max-width: 768px)').matches) {
+        event.preventDefault();
+        desktopNavParents.forEach((otherParent) => {
+          if (otherParent !== parent) {
+            otherParent.classList.remove('menu-open');
+          }
+        });
+        parent.classList.toggle('menu-open');
+      }
     });
   });
 
   document.addEventListener('click', (event) => {
-    const nav = document.getElementById('desktop-main-nav');
-    if (!nav?.contains(event.target)) {
-      desktopDropdowns.forEach((dropdown) => dropdown.removeAttribute('open'));
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+    if (!target.closest('#site-navigation')) {
+      desktopNavParents.forEach((parent) => parent.classList.remove('menu-open'));
     }
   });
 
-  const mobileDropdowns = [...document.querySelectorAll('#mobile-main-nav .nav-dropdown-mobile')];
-  mobileDropdowns.forEach((dropdown) => {
-    dropdown.addEventListener('toggle', () => {
-      if (!dropdown.open) return;
-      mobileDropdowns.forEach((other) => {
-        if (other !== dropdown) other.removeAttribute('open');
-      });
-    });
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('mobile-open');
+    mobileToggle.classList.toggle('is-open');
+    const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+    mobileToggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   });
 </script>

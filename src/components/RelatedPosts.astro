@@ -4,12 +4,12 @@ const { posts = [] } = Astro.props;
 
 {posts.length > 0 && (
   <section class="my-8">
-    <h2 class="mb-3 text-2xl font-bold">সম্পর্কিত পোস্ট</h2>
+    <h2 class="mb-3 text-[28px] font-bold">সম্পর্কিত পোস্ট</h2>
     <div class="grid gap-4 md:grid-cols-3">
       {posts.map((post) => (
-        <a href={`/${post.frontmatter.slug}/`} class="rounded-lg bg-white p-4 shadow-sm hover:shadow">
+        <a href={`/${post.frontmatter.slug}/`} class="np-panel rounded-[10px] p-4 shadow-sm hover:shadow">
           <p class="font-semibold text-blue-700">{post.frontmatter.title}</p>
-          <p class="mt-1 text-xs text-gray-500">{post.frontmatter.date}</p>
+          <p class="mt-1 text-[14px] text-gray-500">{post.frontmatter.date}</p>
         </a>
       ))}
     </div>

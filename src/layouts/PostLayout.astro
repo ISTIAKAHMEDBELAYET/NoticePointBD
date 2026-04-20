@@ -17,9 +17,9 @@ const { frontmatter } = post;
   type="article"
   schema={schema}
 >
-  <section class="my-8 grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
+  <section class="my-8 grid items-start gap-6 lg:grid-cols-[minmax(0,70%)_minmax(0,30%)]">
     <div>
-      <article class="border border-gray-300 bg-white p-4 md:p-5">
+      <article class="np-panel rounded-[10px] p-5 md:p-6">
         <Breadcrumb
           items={[
             ...(frontmatter.categories?.[0]

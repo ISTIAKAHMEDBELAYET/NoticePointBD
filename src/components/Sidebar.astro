@@ -4,26 +4,26 @@ import { getCategoryLabelBn } from '../lib/content-utils';
 const { categories = [], recentPosts = [] } = Astro.props;
 ---
 
-<aside class="space-y-4">
-  <section class="np-panel np-fade-up p-4">
-    <h3 class="mb-2 text-base font-bold">এখানে খুঁজুন</h3>
+<aside class="space-y-4 sidebar">
+  <section class="np-panel np-fade-up widget p-4">
+    <h3 class="widget-title mb-3 text-[18px] font-semibold">এখানে খুঁজুন</h3>
     <form action="/search/" class="flex">
       <input
         type="text"
         name="q"
-        class="w-full rounded-l border border-gray-300 px-3 py-2 text-sm"
+        class="w-full rounded-l border border-gray-300 px-3 py-2 text-[16px]"
         placeholder="Search..."
       />
-      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-sm text-white">Search</button>
+      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-[16px] font-semibold text-white">Search</button>
     </form>
   </section>
 
-  <section class="np-panel np-fade-up p-4">
-    <h3 class="mb-2 text-base font-bold">সব ক্যাটাগরি</h3>
-    <ul class="space-y-1 text-sm">
+  <section class="np-panel np-fade-up widget p-4">
+    <h3 class="widget-title mb-3 text-[18px] font-semibold">সব ক্যাটাগরি</h3>
+    <ul class="space-y-1 text-[17px]">
       {categories.map((category) => (
         <li>
-          <a class="text-gray-700 hover:text-blue-700 hover:underline" href={`/category/${category}/`}>
+          <a class="font-semibold text-gray-700 hover:text-blue-700 hover:underline" href={`/category/${category}/`}>
             {getCategoryLabelBn(category)}
           </a>
         </li>
@@ -31,12 +31,12 @@ const { categories = [], recentPosts = [] } = Astro.props;
     </ul>
   </section>
 
-  <section class="np-panel np-fade-up p-4">
-    <h3 class="mb-2 text-base font-bold">সাম্প্রতিক পোস্ট</h3>
-    <ul class="space-y-2 text-sm">
+  <section class="np-panel np-fade-up widget p-4">
+    <h3 class="widget-title mb-3 text-[18px] font-semibold">সাম্প্রতিক পোস্ট</h3>
+    <ul class="space-y-2 text-[17px]">
       {recentPosts.map((post) => (
         <li>
-          <a class="text-gray-700 hover:text-blue-700 hover:underline" href={`/${post.frontmatter.slug}/`}>
+          <a class="font-semibold text-gray-700 hover:text-blue-700 hover:underline" href={`/${post.frontmatter.slug}/`}>
             {post.frontmatter.title}
           </a>
         </li>

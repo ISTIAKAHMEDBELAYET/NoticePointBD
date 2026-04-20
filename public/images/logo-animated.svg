@@ -7,16 +7,6 @@
   </defs>
 
   <style>
-    @font-face {
-      font-family: 'NPB-Billy';
-      src: url('/fonts/BillyArgel.otf') format('opentype');
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'NPB-Solaiman';
-      src: url('/fonts/SolaimanLipi.ttf') format('truetype');
-      font-display: swap;
-    }
     .pulse-ring {
       transform-origin: 62px 65px;
       animation: ringPulse 2.3s ease-in-out infinite;
@@ -29,12 +19,12 @@
       animation: shineMove 3.5s linear infinite;
     }
     .brand-name {
-      font-family: 'NPB-Billy', 'Billy Argel Fonts', 'Billy Argel', 'Segoe UI', 'Trebuchet MS', sans-serif;
-      font-weight: 700;
-      letter-spacing: 0.2px;
+      font-family: 'Noto Sans Bengali', 'Segoe UI', 'Trebuchet MS', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.1px;
     }
     .brand-sub {
-      font-family: 'NPB-Solaiman', 'SolaimanLipi', 'Noto Serif Bengali', 'Noto Sans Bengali', sans-serif;
+      font-family: 'Noto Sans Bengali', sans-serif;
       font-weight: 500;
       letter-spacing: 0.1px;
     }
@@ -53,8 +43,6 @@
       100% { transform: translateX(350px); opacity: 0; }
     }
   </style>
-
-  <rect x="0" y="0" width="500" height="130" rx="14" fill="#ffffff" />
 
   <g>
     <circle class="pulse-ring" cx="62" cy="65" r="32" fill="none" stroke="url(#npbGrad)" stroke-width="8" />

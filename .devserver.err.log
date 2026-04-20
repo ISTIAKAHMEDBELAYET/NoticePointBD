@@ -1,0 +1,1065 @@
+Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+[2m5:47:03 PM[22m [31m[1m[vite][22m[39m [31mError when evaluating SSR module C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro: failed to import "/src/components/HotStrip.astro"
+|- Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[39m
+ error   Expected ")" but found "}"
+  File:
+    C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8
+  Stacktrace:
+Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+[2m5:47:51 PM[22m [31m[1m[vite][22m[39m [31mError when evaluating SSR module C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro: failed to import "/src/components/HotStrip.astro"
+|- Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[39m
+ error   Expected ")" but found "}"
+  File:
+    C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8
+  Stacktrace:
+Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+[2m5:48:07 PM[22m [31m[1m[vite][22m[39m [31mError when evaluating SSR module C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/index.astro: failed to import "/src/components/HotStrip.astro"
+|- Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[39m
+ error   Expected ")" but found "}"
+  File:
+    C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8
+  Stacktrace:
+Error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/components/HotStrip.astro:34:8: ERROR: Expected ")" but found "}"
+    at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+    at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+    at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+    at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+    at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[2m6:41:38 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:21 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:28 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:30 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:35 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:36 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:37 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:42:50 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:43:18 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:15 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:18 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:23 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:26 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:29 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:44:54 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:45:22 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:45:53 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:46:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:46:26 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:46:29 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:46:31 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:47:13 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:47:33 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:48:23 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:49:03 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:53:04 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:53:13 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:53:51 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:5:22: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:5:22
+[33m  
+  [33mExpected "}" but found "."[33m
+  3  |        const feedList = document.getElementById('feed-list');
+  4  |        const posts = [
+  5  |          ...{pagedPosts.map((post) => ({
+     |                        ^
+  6  |            ...post.frontmatter,
+  7  |            slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:55:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:55:52 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:56:11 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:56:23 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:56:33 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:56:37 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:56:55 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:57:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:57:19 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:57:25 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:58:44 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:58:46 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m6:58:48 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts:4:20: ERROR: Expected "}" but found "."[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/stsup/OneDrive/Documents/NoticePointBD/src/pages/search.astro?astro&type=script&index=0&lang.ts[39m:4:20
+[33m  
+  [33mExpected "}" but found "."[33m
+  2  |      const feedList = document.getElementById('feed-list');
+  3  |      const posts = [
+  4  |        ...{pagedPosts.map((post) => ({
+     |                      ^
+  5  |          ...post.frontmatter,
+  6  |          slug: post.frontmatter.slug,
+  [39m
+      at failureErrorWithLog (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:1649:15)
+      at C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (C:\Users\stsup\OneDrive\Documents\NoticePointBD\node_modules\vite\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:509:28)
+      at addChunk (node:internal/streams/readable:563:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+      at Readable.push (node:internal/streams/readable:394:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

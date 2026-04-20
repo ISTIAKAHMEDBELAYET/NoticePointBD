@@ -1,31 +1,57 @@
----
+﻿---
 import { getCategoryLabelBn } from '../lib/content-utils';
 
 const { categories = [] } = Astro.props;
 ---
 
-<form id="filter-form" class="mb-6 grid gap-3 border border-gray-300 bg-white p-3 md:grid-cols-4">
-  <select id="filter-category" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">সব ক্যাটাগরি</option>
-    {categories.map((category) => (
-      <option value={category}>{getCategoryLabelBn(category)}</option>
-    ))}
-  </select>
+<form id="filter-form" class="mb-6 rounded-[12px] border border-[#e2e8f0] bg-[#f8fafc] p-5 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05)]">
+  <div class="mb-4">
+    <label for="filter-keyword" class="mb-2 block text-[17px] font-semibold text-[#334155]">সার্চ করুন</label>
+    <input
+      id="filter-keyword"
+      type="text"
+      class="w-full rounded-lg border border-[#cbd5e1] bg-white px-4 py-3 text-[16px]"
+      placeholder="চাকরি/প্রতিষ্ঠান লিখুন"
+    />
+  </div>
 
-  <select id="filter-deadline" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">যেকোনো ডেডলাইন</option>
-    <option value="today">আজ</option>
-    <option value="3">৩ দিন</option>
-    <option value="7">৭ দিন</option>
-    <option value="15">১৫ দিন</option>
-  </select>
+  <div class="grid gap-4 md:grid-cols-3">
+    <div class="filter-group">
+      <label for="filter-category" class="mb-2 block text-[17px] font-semibold text-[#334155]">ক্যাটাগরি</label>
+      <select id="filter-category" class="w-full rounded-lg border border-[#cbd5e1] bg-white px-4 py-3 text-[16px]">
+        <option value="">সকল ক্যাটাগরি</option>
+        {categories.map((category) => (
+          <option value={category}>{getCategoryLabelBn(category)}</option>
+        ))}
+      </select>
+    </div>
 
-  <select id="filter-date" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">যেকোনো প্রকাশ তারিখ</option>
-    <option value="1">শেষ ২৪ ঘণ্টা</option>
-    <option value="3">শেষ ৩ দিন</option>
-    <option value="7">শেষ ৭ দিন</option>
-  </select>
+    <div class="filter-group">
+      <label for="filter-deadline" class="mb-2 block text-[17px] font-semibold text-[#334155]">আবেদনের সময়সীমা</label>
+      <select id="filter-deadline" class="w-full rounded-lg border border-[#cbd5e1] bg-white px-4 py-3 text-[16px]">
+        <option value="">যেকোনো সময়সীমা</option>
+        <option value="today">আজ</option>
+        <option value="1">আগামীকাল</option>
+        <option value="3">আগামী ৩ দিনের মধ্যে</option>
+        <option value="7">আগামী ৭ দিনের মধ্যে</option>
+        <option value="15">আগামী ১৫ দিনের মধ্যে</option>
+      </select>
+    </div>
 
-  <button type="submit" class="rounded bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">খুঁজুন</button>
+    <div class="filter-group">
+      <label for="filter-date" class="mb-2 block text-[17px] font-semibold text-[#334155]">প্রকাশের তারিখ</label>
+      <select id="filter-date" class="w-full rounded-lg border border-[#cbd5e1] bg-white px-4 py-3 text-[16px]">
+        <option value="">যেকোনো প্রকাশের তারিখ</option>
+        <option value="1">গত ২৪ ঘন্টা</option>
+        <option value="3">গত ৩ দিন</option>
+        <option value="7">গত ৭ দিন</option>
+        <option value="15">গত ১৫ দিন</option>
+        <option value="30">গত ৩০ দিন</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="mt-4 flex justify-end">
+    <button type="submit" class="rounded-lg bg-[#166534] px-8 py-3 text-[16px] font-semibold text-white hover:bg-[#15803d]">খুঁজুন</button>
+  </div>
 </form>
