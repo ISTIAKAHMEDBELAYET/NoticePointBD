@@ -1,13 +1,26 @@
 ---
-// Privacy Policy page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-  <head>
-    <title>Privacy Policy - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Privacy Policy</h1>
-    <p>Privacy policy content will go here.</p>
-  </body>
-</html>
+<BaseLayout title="Privacy Policy - NoticePointBD" description="Read the privacy policy for NoticePointBD.">
+  <article class="mx-auto my-8 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-3xl font-bold">Privacy Policy</h1>
+    <p class="mb-4 text-gray-700">Last updated: April 20, 2026</p>
+    <p class="mb-4 text-gray-700">
+      NoticePointBD may collect non-personal usage data such as browser type, device type, and visit pages for analytics and service improvement.
+    </p>
+    <p class="mb-4 text-gray-700">
+      We may use third-party services, including Google AdSense, that use cookies to serve ads based on a user&apos;s prior visits to this and other websites.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Google&apos;s advertising cookies enable Google and its partners to serve personalized ads. Users may opt out of personalized advertising by visiting Google Ads Settings.
+    </p>
+    <p class="mb-4 text-gray-700">
+      We do not sell personal data. If you contact us directly, we only use your message details to respond to your request.
+    </p>
+    <p class="text-gray-700">
+      For questions about this policy, contact:
+      <a class="text-blue-700 hover:underline" href="mailto:contact@noticepointbd.com"> contact@noticepointbd.com</a>.
+    </p>
+  </article>
+</BaseLayout>

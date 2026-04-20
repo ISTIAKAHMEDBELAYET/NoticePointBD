@@ -1,4 +1,49 @@
----
-// AgeCalculator component placeholder
----
-<!-- This component will implement the age calculator tool. -->
+<section class="mx-auto my-8 max-w-2xl rounded-lg bg-white p-6 shadow-sm">
+  <h1 class="mb-4 text-3xl font-bold">Age Calculator</h1>
+  <label class="mb-2 block text-sm font-medium text-gray-700" for="dob">Date of Birth</label>
+  <input id="dob" type="date" class="mb-4 w-full rounded border border-gray-300 px-4 py-2" />
+  <button id="calc-btn" class="rounded bg-blue-700 px-4 py-2 font-medium text-white hover:bg-blue-800">Calculate</button>
+  <p id="result" class="mt-4 text-gray-700"></p>
+  <p id="eligibility" class="mt-1 text-sm font-semibold"></p>
+</section>
+
+<script>
+  const dobInput = document.getElementById('dob');
+  const button = document.getElementById('calc-btn');
+  const result = document.getElementById('result');
+  const eligibility = document.getElementById('eligibility');
+
+  button?.addEventListener('click', () => {
+    const dob = dobInput?.value ? new Date(dobInput.value) : null;
+    if (!dob || Number.isNaN(dob.getTime())) {
+      result.textContent = 'Please select a valid date of birth.';
+      eligibility.textContent = '';
+      return;
+    }
+
+    const now = new Date();
+    let years = now.getFullYear() - dob.getFullYear();
+    let months = now.getMonth() - dob.getMonth();
+    let days = now.getDate() - dob.getDate();
+
+    if (days < 0) {
+      months -= 1;
+      const prevMonthDays = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+      days += prevMonthDays;
+    }
+
+    if (months < 0) {
+      years -= 1;
+      months += 12;
+    }
+
+    result.textContent = `Your age is ${years} years, ${months} months, and ${days} days.`;
+    if (years >= 18 && years <= 30) {
+      eligibility.textContent = 'Govt Job Eligibility (18-30): Eligible';
+      eligibility.className = 'mt-1 text-sm font-semibold text-green-700';
+    } else {
+      eligibility.textContent = 'Govt Job Eligibility (18-30): Not in standard range';
+      eligibility.className = 'mt-1 text-sm font-semibold text-red-700';
+    }
+  });
+</script>

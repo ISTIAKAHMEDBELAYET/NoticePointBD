@@ -1,9 +1,92 @@
 ---
-// Header component placeholder
+const chakriLinks = [
+  ['government-jobs', 'Sorkari Chakri'],
+  ['bank-jobs', 'Bank Chakri'],
+  ['private-jobs', 'Private Chakri'],
+  ['defence-jobs', 'Defence Chakri'],
+  ['ngo-jobs', 'NGO Chakri'],
+  ['university-jobs', 'University Jobs'],
+  ['hot-jobs', 'Hot Jobs'],
+  ['teletalk-application', 'Online Avedon'],
+];
+
+const vortiLinks = [
+  ['admission', 'All Admission'],
+  ['university-admission', 'University Admission'],
+  ['medical-admission', 'Medical Admission'],
+  ['college-admission', 'College Admission'],
+  ['school-admission', 'School Admission'],
+];
+
+const folafolLinks = [
+  ['result', 'All Result'],
+  ['ssc-result', 'SSC Result'],
+  ['hsc-result', 'HSC Result'],
+  ['university-result', 'University Result'],
+  ['job-exam-result', 'Job Exam Result'],
+];
 ---
-<header>
-  <img src="/images/logo.png" alt="NoticePointBD Logo" style="height:48px;" />
-  <nav>
-    <!-- Navigation will go here -->
+
+<header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    <a class="flex items-center gap-3" href="/">
+      <img src="/images/logo.png" alt="NoticePointBD Logo" class="h-10 w-auto" loading="eager" />
+      <span class="text-xl font-bold text-blue-700">NoticePointBD</span>
+    </a>
+    <button id="mobile-menu-button" class="rounded border px-3 py-1 text-sm md:hidden">Menu</button>
+    <nav class="hidden items-center gap-2 text-sm font-medium text-gray-700 md:flex">
+      <a class="rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700" href="/">Home</a>
+      <details class="group relative">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Chakri</summary>
+        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+          {chakriLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <details class="group relative">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Vorti</summary>
+        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+          {vortiLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <details class="group relative">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Folafol</summary>
+        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+          {folafolLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <a class="rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700" href="/category/blog/">Blog</a>
+      <details class="group relative">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Tools</summary>
+        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+          <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a></li>
+          <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+
+  <nav id="mobile-menu" class="mx-auto hidden max-w-6xl space-y-2 border-t border-gray-100 px-4 py-3 text-sm md:hidden">
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/">Home</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/government-jobs/">Sorkari Chakri</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/admission/">Admission</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/result/">Result</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/about/">About</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/contact/">Contact</a>
   </nav>
 </header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

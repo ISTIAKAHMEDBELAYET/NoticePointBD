@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FilterBar from '../../../../components/FilterBar.astro';
+import HotStrip from '../../../../components/HotStrip.astro';
+import PostCard from '../../../../components/PostCard.astro';
+import Pagination from '../../../../components/Pagination.astro';
+import WidgetArea from '../../../../components/WidgetArea.astro';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../../../../lib/content-utils';
+
+export async function getStaticPaths() {
+  const allPosts = sortPostsByDate((await Astro.glob('../../../../content/**/*.md')).filter((post) => post.frontmatter?.slug));
+  const categoryMap = new Map();
+
+  for (const post of allPosts) {
+    const categories = Array.isArray(post.frontmatter?.categories) ? post.frontmatter.categories : [];
+    for (const category of categories) {
+      if (!categoryMap.has(category)) {
+        categoryMap.set(category, []);
+      }
+      categoryMap.get(category).push(post);
+    }
+  }
+
+  const paths = [];
+  for (const [category, categoryPosts] of categoryMap.entries()) {
+    const totalPages = Math.max(1, Math.ceil(categoryPosts.length / POSTS_PER_PAGE));
+    for (let page = 2; page <= totalPages; page += 1) {
+      paths.push({
+        params: { category, page: String(page) },
+        props: { category, categoryPosts, allPosts, page },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { category, categoryPosts, allPosts, page } = Astro.props;
+const categories = getUniqueCategories(allPosts);
+const recentPosts = allPosts.slice(0, 5);
+const { currentPage, totalPages, pagedPosts } = paginatePosts(categoryPosts, page, POSTS_PER_PAGE);
+const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
+---
+
+<BaseLayout
+  title={`${category} - Page ${currentPage} - NoticePointBD`}
+  description={`Browse ${category} posts page ${currentPage} on NoticePointBD.`}
+>
+  <section class="my-8">
+    <h1 class="mb-6 text-3xl font-bold capitalize">{category} - Page {currentPage}</h1>
+    <FilterBar categories={categories} />
+    <HotStrip posts={hotPosts} />
+    <div class="space-y-6">
+      {pagedPosts.map((post) => (
+        <PostCard post={post} />
+      ))}
+    </div>
+    <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/category/${category}`} />
+    <WidgetArea categories={categories} recentPosts={recentPosts} />
+  </section>
+</BaseLayout>

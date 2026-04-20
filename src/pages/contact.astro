@@ -1,13 +1,18 @@
 ---
-// Contact page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-  <head>
-    <title>Contact - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Contact</h1>
-    <p>Contact form or info will go here.</p>
-  </body>
-</html>
+<BaseLayout title="Contact NoticePointBD" description="Contact NoticePointBD for corrections, support, or business inquiries.">
+  <article class="mx-auto my-8 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-3xl font-bold">Contact</h1>
+    <p class="mb-4 text-gray-700">
+      For corrections, copyright concerns, or business inquiries, contact us by email.
+    </p>
+    <p class="mb-4 text-gray-800">
+      Email: <a class="text-blue-700 hover:underline" href="mailto:contact@noticepointbd.com">contact@noticepointbd.com</a>
+    </p>
+    <p class="text-gray-700">
+      We review requests regularly and try to respond as quickly as possible.
+    </p>
+  </article>
+</BaseLayout>

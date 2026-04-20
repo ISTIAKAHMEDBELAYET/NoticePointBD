@@ -1,13 +1,11 @@
 ---
-// Age Calculator page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AgeCalculator from '../components/AgeCalculator.astro';
 ---
 
-<html>
-  <head>
-    <title>Age Calculator - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Age Calculator</h1>
-    <p>Age calculator tool will be implemented here.</p>
-  </body>
-</html>
+<BaseLayout
+  title="Age Calculator BD - NoticePointBD"
+  description="Calculate age in years, months, and days with Bangladesh govt job eligibility check."
+>
+  <AgeCalculator />
+</BaseLayout>

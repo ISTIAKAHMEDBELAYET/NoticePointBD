@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import HotStrip from '../../components/HotStrip.astro';
+import PostCard from '../../components/PostCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import WidgetArea from '../../components/WidgetArea.astro';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../../lib/content-utils';
+
+export async function getStaticPaths() {
+  const allPosts = sortPostsByDate((await Astro.glob('../../content/**/*.md')).filter((post) => post.frontmatter?.slug));
+  const totalPages = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
+  return Array.from({ length: totalPages - 1 }, (_, i) => i + 2).map((page) => ({
+    params: { page: String(page) },
+    props: { allPosts, page },
+  }));
+}
+
+const { allPosts, page } = Astro.props;
+const categories = getUniqueCategories(allPosts);
+const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
+const recentPosts = allPosts.slice(0, 5);
+const { currentPage, totalPages, pagedPosts } = paginatePosts(allPosts, page, POSTS_PER_PAGE);
+---
+
+<BaseLayout
+  title={`Page ${currentPage} - NoticePointBD`}
+  description={`Browse page ${currentPage} of latest NoticePointBD posts.`}
+>
+  <section class="my-8">
+    <h1 class="mb-6 text-3xl font-bold">Latest Updates - Page {currentPage}</h1>
+    <FilterBar categories={categories} />
+    <HotStrip posts={hotPosts} />
+
+    <div class="space-y-6">
+      {pagedPosts.map((post) => (
+        <PostCard post={post} />
+      ))}
+    </div>
+
+    <Pagination currentPage={currentPage} totalPages={totalPages} basePath="" />
+    <WidgetArea categories={categories} recentPosts={recentPosts} />
+  </section>
+</BaseLayout>

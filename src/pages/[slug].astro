@@ -1,13 +1,36 @@
 ---
-// Single post page placeholder
+import PostLayout from '../layouts/PostLayout.astro';
+import { sortPostsByDate, getUniqueCategories, getPostSchema } from '../lib/content-utils';
+
+export async function getStaticPaths() {
+  const allPosts = (await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug);
+  return allPosts.map((post) => ({
+    params: { slug: post.frontmatter.slug },
+    props: { post, allPosts },
+  }));
+}
+
+const { post, allPosts } = Astro.props;
+const { Content } = post;
+const frontmatter = post.frontmatter ?? {};
+const sortedPosts = sortPostsByDate(allPosts);
+const categories = getUniqueCategories(sortedPosts);
+const recentPosts = sortedPosts.slice(0, 5);
+const relatedPosts = sortedPosts
+  .filter((item) => item.frontmatter.slug !== frontmatter.slug)
+  .filter((item) => (item.frontmatter.categories ?? []).some((category) => (frontmatter.categories ?? []).includes(category)))
+  .slice(0, 3);
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? new URL('https://noticepointbd.pages.dev')).toString();
+const schema = getPostSchema(post, canonical);
 ---
 
-<html>
-  <head>
-    <title>Post - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Post Page</h1>
-    <p>This is a placeholder for single post pages.</p>
-  </body>
-</html>
+<PostLayout
+  post={post}
+  relatedPosts={relatedPosts}
+  categories={categories}
+  recentPosts={recentPosts}
+  schema={schema}
+>
+  <Content />
+</PostLayout>

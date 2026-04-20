@@ -1,13 +1,18 @@
 ---
-// About page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-  <head>
-    <title>About - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>About</h1>
-    <p>About NoticePointBD.</p>
-  </body>
-</html>
+<BaseLayout title="About NoticePointBD" description="Learn about NoticePointBD and how we publish updates.">
+  <article class="mx-auto my-8 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-3xl font-bold">About NoticePointBD</h1>
+    <p class="mb-4 text-gray-700">
+      NoticePointBD is a static information portal focused on Bangladesh job circulars, admission notices, exam results, and helpful guides.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Our goal is to publish clear and updated notices in a simple format so users can quickly understand application deadlines, eligibility basics, and source links.
+    </p>
+    <p class="text-gray-700">
+      We do not process job applications directly. Users should always verify details from official circulars and websites before applying.
+    </p>
+  </article>
+</BaseLayout>

@@ -1,13 +1,18 @@
 ---
-// Disclaimer page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-  <head>
-    <title>Disclaimer - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Disclaimer</h1>
-    <p>Disclaimer content will go here.</p>
-  </body>
-</html>
+<BaseLayout title="Disclaimer - NoticePointBD" description="Disclaimer and content accuracy policy of NoticePointBD.">
+  <article class="mx-auto my-8 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-3xl font-bold">Disclaimer</h1>
+    <p class="mb-4 text-gray-700">
+      NoticePointBD publishes informational summaries of job circulars, admissions, and results. We are not a government body or official recruiting authority.
+    </p>
+    <p class="mb-4 text-gray-700">
+      While we try to keep content accurate and up to date, we cannot guarantee completeness or absolute correctness at all times.
+    </p>
+    <p class="text-gray-700">
+      Users must verify all application details, deadlines, and requirements from official sources before taking action.
+    </p>
+  </article>
+</BaseLayout>

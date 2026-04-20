@@ -1,41 +1,44 @@
 ---
-// WidgetArea component placeholder
+const { categories = [], recentPosts = [] } = Astro.props;
 ---
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 bg-white rounded shadow p-6">
-	<!-- Widget 1: Search Box -->
-	<div>
-		<h3 class="font-bold mb-2">Ekhane Khujun...</h3>
-		<div class="flex">
-			<input type="text" class="border rounded-l px-3 py-2 w-full" placeholder="Search..." />
-			<button class="bg-blue-600 text-white px-4 py-2 rounded-r hover:bg-blue-700">Search</button>
-		</div>
-	</div>
-	<!-- Widget 2: Category List -->
-	<div>
-		<h3 class="font-bold mb-2">All Categories:</h3>
-		<ul class="columns-2 gap-4 text-sm">
-			<li>Shokal Chakri</li>
-			<li>Vorti Biggopti</li>
-			<li>Sorkari Chakri</li>
-			<li>SSC/HSC Folafol</li>
-			<li>Bank Chakri</li>
-			<li>Blog</li>
-			<li>Private Chakri</li>
-			<li>Age Calculator</li>
-			<li>Defence Chakri</li>
-			<li>Smart Search</li>
-			<li>NGO Chakri</li>
-		</ul>
-	</div>
-	<!-- Widget 3: Recent Posts -->
-	<div>
-		<h3 class="font-bold mb-2">Recent Posts</h3>
-		<ul class="text-sm">
-			<li>Bangladesh Navy Job Circular 2026 <span class="text-gray-400">(19 Apr)</span></li>
-			<li>Prison Job Circular 2026 <span class="text-gray-400">(18 Apr)</span></li>
-			<li>HSC Admission 2026 Notice <span class="text-gray-400">(17 Apr)</span></li>
-			<li>How to Apply Teletalk <span class="text-gray-400">(15 Apr)</span></li>
-			<li>HSC Result 2026 <span class="text-gray-400">(14 Apr)</span></li>
-		</ul>
-	</div>
-</div>
+
+<section class="my-10 grid gap-6 rounded-lg bg-white p-6 shadow-sm md:grid-cols-3">
+  <div>
+    <h3 class="mb-2 text-lg font-bold">Ekhane Khujun...</h3>
+    <form action="/search/" class="flex">
+      <input
+        type="text"
+        name="q"
+        class="w-full rounded-l border border-gray-300 px-3 py-2"
+        placeholder="Search keyword..."
+      />
+      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">Search</button>
+    </form>
+  </div>
+
+  <div>
+    <h3 class="mb-2 text-lg font-bold">All Categories</h3>
+    <ul class="columns-2 gap-4 text-sm">
+      {categories.map((category) => (
+        <li class="mb-1">
+          <a class="hover:text-blue-700 hover:underline" href={`/category/${category}/`}>
+            {category}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="mb-2 text-lg font-bold">Recent Posts</h3>
+    <ul class="space-y-1 text-sm">
+      {recentPosts.map((post) => (
+        <li>
+          <a class="hover:text-blue-700 hover:underline" href={`/${post.frontmatter.slug}/`}>
+            {post.frontmatter.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

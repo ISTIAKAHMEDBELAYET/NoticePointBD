@@ -1,33 +1,72 @@
 ---
-// Homepage placeholder
----
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FilterBar from '../components/FilterBar.astro';
 import HotStrip from '../components/HotStrip.astro';
 import PostCard from '../components/PostCard.astro';
 import Pagination from '../components/Pagination.astro';
 import WidgetArea from '../components/WidgetArea.astro';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../lib/content-utils';
 
+const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug));
+const categories = getUniqueCategories(allPosts);
+const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
+const recentPosts = allPosts.slice(0, 5);
+const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
 ---
 
-<BaseLayout>
-  <div class="container mx-auto px-2">
-    <FilterBar />
-    <HotStrip />
-    <section class="my-6">
-      <!-- Main post feed: Replace with dynamic post list later -->
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-    </section>
-    <Pagination />
-    <WidgetArea />
-  </div>
+<BaseLayout
+  title="NoticePointBD - Bangladesh Job Circular, Admission and Results"
+  description="Latest Bangladesh job circulars, admission updates, exam results, and blog guides."
+>
+  <section class="my-8">
+    <h1 class="mb-2 text-3xl font-bold">Latest Updates</h1>
+    <p class="mb-6 text-gray-600">
+      NoticePointBD publishes jobs, admissions, results, and blog notices in one place with flat clean URLs.
+    </p>
+
+    <FilterBar categories={categories} />
+    <HotStrip posts={hotPosts} />
+
+    <div id="feed-list" class="space-y-6">
+      {pagedPosts.map((post) => (
+        <PostCard post={post} />
+      ))}
+    </div>
+
+    <Pagination currentPage={1} totalPages={totalPages} basePath="" />
+    <WidgetArea categories={categories} recentPosts={recentPosts} />
+  </section>
 </BaseLayout>
+
+<script>
+  const form = document.getElementById('filter-form');
+  const cards = [...document.querySelectorAll('[data-post-card]')];
+  const categorySelect = document.getElementById('filter-category');
+  const deadlineSelect = document.getElementById('filter-deadline');
+  const dateSelect = document.getElementById('filter-date');
+
+  const now = new Date();
+  const daysDiff = (target) => Math.ceil((target.getTime() - now.getTime()) / 86400000);
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const category = categorySelect?.value ?? '';
+    const deadline = deadlineSelect?.value ?? '';
+    const published = dateSelect?.value ?? '';
+
+    cards.forEach((card) => {
+      const cardCategories = (card.dataset.categories ?? '').split(',').filter(Boolean);
+      const cardDate = card.dataset.date ? new Date(card.dataset.date) : null;
+      const cardDeadline = card.dataset.deadline ? new Date(card.dataset.deadline) : null;
+
+      const matchCategory = !category || cardCategories.includes(category);
+      const matchPublished = !published || (cardDate && daysDiff(cardDate) <= Number(published) && daysDiff(cardDate) >= -3650);
+      const matchDeadline =
+        !deadline ||
+        (deadline === 'today' && cardDeadline && daysDiff(cardDeadline) === 0) ||
+        (deadline !== 'today' && cardDeadline && daysDiff(cardDeadline) <= Number(deadline) && daysDiff(cardDeadline) >= 0);
+
+      card.style.display = matchCategory && matchPublished && matchDeadline ? '' : 'none';
+    });
+  });
+</script>

@@ -1,13 +1,21 @@
 ---
-// Terms & Conditions page placeholder
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-  <head>
-    <title>Terms & Conditions - NoticePointBD</title>
-  </head>
-  <body>
-    <h1>Terms & Conditions</h1>
-    <p>Terms and conditions content will go here.</p>
-  </body>
-</html>
+<BaseLayout title="Terms and Conditions - NoticePointBD" description="Terms and conditions for using NoticePointBD.">
+  <article class="mx-auto my-8 max-w-3xl rounded-lg bg-white p-6 shadow-sm">
+    <h1 class="mb-4 text-3xl font-bold">Terms and Conditions</h1>
+    <p class="mb-4 text-gray-700">
+      By using NoticePointBD, you agree to use the website for lawful purposes and not to misuse or attempt to disrupt services.
+    </p>
+    <p class="mb-4 text-gray-700">
+      All content is provided for informational use. We reserve the right to update, modify, or remove content without notice.
+    </p>
+    <p class="mb-4 text-gray-700">
+      External links are provided for reference; we are not responsible for third-party content, privacy practices, or services.
+    </p>
+    <p class="text-gray-700">
+      Continued use of this website after updates means acceptance of the revised terms.
+    </p>
+  </article>
+</BaseLayout>

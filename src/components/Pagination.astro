@@ -1,12 +1,41 @@
 ---
-// Pagination component placeholder
+const { currentPage = 1, totalPages = 1, basePath = '' } = Astro.props;
+
+const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+const buildLink = (page) => {
+  if (page <= 1) {
+    return `${basePath}/`;
+  }
+  return `${basePath}/page/${page}/`;
+};
 ---
-<nav class="flex justify-center items-center gap-2 my-6">
-	<button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">&lt;- Prev</button>
-	<button class="px-3 py-1 rounded bg-blue-600 text-white">1</button>
-	<button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">2</button>
-	<button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">3</button>
-	<span class="px-2">...</span>
-	<button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">149</button>
-	<button class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">Next -&gt;</button>
-</nav>
+
+{totalPages > 1 && (
+  <nav class="my-8 flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
+    {currentPage > 1 ? (
+      <a rel="prev" href={buildLink(currentPage - 1)} class="rounded border px-3 py-1 hover:bg-gray-100">
+        &lt;- Prev
+      </a>
+    ) : (
+      <span class="rounded border border-gray-200 px-3 py-1 text-gray-400">&lt;- Prev</span>
+    )}
+
+    {pageNumbers.map((page) => (
+      <a
+        href={buildLink(page)}
+        class={`rounded px-3 py-1 ${page === currentPage ? 'bg-blue-700 text-white' : 'border hover:bg-gray-100'}`}
+      >
+        {page}
+      </a>
+    ))}
+
+    {currentPage < totalPages ? (
+      <a rel="next" href={buildLink(currentPage + 1)} class="rounded border px-3 py-1 hover:bg-gray-100">
+        Next -&gt;
+      </a>
+    ) : (
+      <span class="rounded border border-gray-200 px-3 py-1 text-gray-400">Next -&gt;</span>
+    )}
+  </nav>
+)}

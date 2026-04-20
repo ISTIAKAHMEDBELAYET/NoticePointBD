@@ -1,4 +1,14 @@
 ---
-// QuickInfoBox component placeholder
+const { frontmatter = {} } = Astro.props;
 ---
-<!-- This component will show vacancy, deadline, etc. on single post. -->
+
+<section class="my-6 rounded-lg border border-blue-100 bg-blue-50 p-4">
+  <h2 class="mb-3 text-lg font-bold text-blue-900">Quick Info</h2>
+  <div class="grid gap-2 text-sm text-blue-900 md:grid-cols-2">
+    {frontmatter.vacancies && <p><strong>Podir Sonkha:</strong> {frontmatter.vacancies}</p>}
+    {frontmatter.deadline && <p><strong>Avedon Shesh Tarikh:</strong> {frontmatter.deadline}</p>}
+    {frontmatter.applyType && <p><strong>Avedon Dhoron:</strong> {frontmatter.applyType}</p>}
+    {frontmatter.organization && <p><strong>Shongstha:</strong> {frontmatter.organization}</p>}
+    {frontmatter.resultDate && <p><strong>Result Date:</strong> {frontmatter.resultDate}</p>}
+  </div>
+</section>

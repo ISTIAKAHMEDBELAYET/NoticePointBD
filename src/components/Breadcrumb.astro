@@ -1,4 +1,32 @@
 ---
-// Breadcrumb component placeholder
+const { items = [] } = Astro.props;
+const fullItems = [{ label: 'Home', href: '/' }, ...items];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: fullItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: item.href ? new URL(item.href, Astro.site ?? 'https://noticepointbd.pages.dev').toString() : undefined,
+  })),
+};
 ---
-<!-- This component will render breadcrumbs with schema markup. -->
+
+<nav aria-label="Breadcrumb" class="mb-4 text-sm text-gray-600">
+  <ol class="flex flex-wrap items-center gap-2">
+    {fullItems.map((item, index) => (
+      <li class="flex items-center gap-2">
+        {index > 0 && <span>/</span>}
+        {item.href && index < fullItems.length - 1 ? (
+          <a class="hover:text-blue-700 hover:underline" href={item.href}>{item.label}</a>
+        ) : (
+          <span>{item.label}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
