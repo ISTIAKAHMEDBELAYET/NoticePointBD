@@ -6,7 +6,7 @@ import FilterBar from '../components/FilterBar.astro';
 import PostCard from '../components/PostCard.astro';
 import Pagination from '../components/Pagination.astro';
 import Sidebar from '../components/Sidebar.astro';
-import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../lib/content-utils.js';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../lib/content-utils';
 
 const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug));
 const categories = getUniqueCategories(allPosts);
