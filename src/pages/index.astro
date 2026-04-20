@@ -19,10 +19,10 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
   description="বাংলাদেশের সর্বশেষ চাকরির খবর, ভর্তি বিজ্ঞপ্তি, ফলাফল ও গুরুত্বপূর্ণ আপডেট এক জায়গায়।"
 >
   <section class="my-6">
-    <h1 class="mb-1 text-3xl font-bold text-blue-800">সর্বশেষ আপডেট</h1>
-    <p class="mb-5 text-gray-700">
-      চাকরি, ভর্তি, ফলাফল ও প্রয়োজনীয় গাইড - সব একসাথে।
-    </p>
+    <div class="np-panel np-fade-up mb-5 border-l-4 border-l-blue-600 p-4">
+      <h1 class="mb-1 text-3xl font-bold text-blue-800">সর্বশেষ আপডেট</h1>
+      <p class="text-gray-700">চাকরি, ভর্তি, ফলাফল ও প্রয়োজনীয় গাইড - সব একসাথে।</p>
+    </div>
 
     <FilterBar categories={categories} />
     <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">

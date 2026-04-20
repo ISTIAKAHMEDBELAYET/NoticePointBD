@@ -29,68 +29,138 @@ const folafolLinks = [
 
 <header class="sticky top-0 z-50 border-b border-gray-300 bg-white">
   <div class="mx-auto flex max-w-[1200px] items-center justify-between px-2 py-3">
-    <a class="flex items-center gap-2" href="/">
-      <img src="/images/logo-animated.svg" alt="NoticePointBD লোগো" class="h-10 w-auto" loading="eager" />
-      <span class="text-lg font-bold text-blue-700 md:text-xl">NoticePointBD</span>
+    <a class="flex items-center gap-3" href="/">
+      <img src="/images/logo-animated.svg?v=20260420b" alt="NoticePointBD লোগো" class="h-14 w-auto md:h-16" loading="eager" />
     </a>
-    <button id="mobile-menu-button" class="rounded border px-3 py-1 text-sm md:hidden">মেনু</button>
+    <button
+      id="mobile-menu-open"
+      class="rounded border border-gray-300 px-4 py-2 text-base font-semibold text-gray-700 md:hidden"
+      aria-label="মোবাইল মেনু খুলুন"
+    >
+      মেনু
+    </button>
   </div>
 
   <div class="hidden border-t border-gray-300 bg-[#1f2937] md:block">
-    <nav class="mx-auto flex max-w-[1200px] items-center gap-1 px-2 py-2 text-[15px] font-medium text-white">
-      <a class="rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/">হোম</a>
-      <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">চাকরি</summary>
-        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+    <nav id="desktop-main-nav" class="mx-auto flex max-w-[1200px] items-center gap-2 px-2 py-2 text-[17px] font-medium text-white">
+      <a class="rounded px-2 py-1 hover:bg-white/15" href="/">হোম</a>
+      <details class="group relative nav-dropdown">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">চাকরি</summary>
+        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
+          {chakriLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <details class="group relative nav-dropdown">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">ভর্তি</summary>
+        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
+          {vortiLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <details class="group relative nav-dropdown">
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/15">ফলাফল</summary>
+        <ul class="absolute left-0 mt-1 w-64 rounded border border-gray-200 bg-white p-2 text-sm text-gray-800 shadow-lg">
+          {folafolLinks.map(([slug, label]) => (
+            <li><a class="block rounded px-2 py-1 text-gray-800 hover:bg-gray-100 hover:text-blue-700" href={`/category/${slug}/`}>{label}</a></li>
+          ))}
+        </ul>
+      </details>
+      <a class="rounded px-2 py-1 hover:bg-white/15" href="/category/blog/">ব্লগ</a>
+      <a class="rounded px-2 py-1 hover:bg-white/15" href="/age-calculator/">Age Calculator</a>
+      <a class="rounded px-2 py-1 hover:bg-white/15" href="/search/">Smart Search</a>
+      <a class="ml-auto rounded px-2 py-1 hover:bg-white/15" href="/search/" aria-label="Search">
+        🔍
+      </a>
+    </nav>
+  </div>
+</header>
+
+  <div id="mobile-drawer" class="fixed inset-0 z-[70] hidden md:hidden">
+  <button id="mobile-menu-overlay" class="absolute inset-0 bg-black/45" aria-label="মেনু বন্ধ করুন"></button>
+  <div class="relative ml-auto h-full w-[88%] max-w-[360px] overflow-y-auto bg-white p-4">
+    <div class="mb-4 flex items-center justify-between border-b border-gray-200 pb-3">
+      <img src="/images/logo-animated.svg?v=20260420b" alt="NoticePointBD লোগো" class="h-10 w-auto" />
+      <button id="mobile-menu-close" class="rounded border border-gray-300 px-3 py-1 text-sm">বন্ধ</button>
+    </div>
+
+    <nav id="mobile-main-nav" class="space-y-2 text-[16px] font-medium text-gray-800">
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/">হোম</a>
+      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
+        <summary class="cursor-pointer">চাকরি ক্যাটাগরি</summary>
+        <ul class="mt-2 space-y-1 text-sm">
           {chakriLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
           ))}
         </ul>
       </details>
-      <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">ভর্তি</summary>
-        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
+        <summary class="cursor-pointer">ভর্তি ক্যাটাগরি</summary>
+        <ul class="mt-2 space-y-1 text-sm">
           {vortiLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
           ))}
         </ul>
       </details>
-      <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">ফলাফল</summary>
-        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
+      <details class="rounded border border-gray-200 p-2 nav-dropdown-mobile">
+        <summary class="cursor-pointer">ফলাফল ক্যাটাগরি</summary>
+        <ul class="mt-2 space-y-1 text-sm">
           {folafolLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
           ))}
         </ul>
       </details>
-      <a class="rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/category/blog/">ব্লগ</a>
-      <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">টুলস</summary>
-        <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
-          <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a></li>
-          <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a></li>
-        </ul>
-      </details>
-      <a class="ml-auto rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/search/" aria-label="Search">🔍</a>
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/category/blog/">ব্লগ</a>
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/search/">Smart Search</a>
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a>
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/about/">আমাদের সম্পর্কে</a>
+      <a class="block rounded px-2 py-2 hover:bg-gray-100" href="/contact/">যোগাযোগ</a>
     </nav>
   </div>
-
-  <nav id="mobile-menu" class="mx-auto hidden max-w-[1200px] space-y-2 border-t border-gray-200 px-2 py-3 text-sm md:hidden">
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/">হোম</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/government-jobs/">সরকারি চাকরি</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/admission/">ভর্তি</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/result/">ফলাফল</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/about/">আমাদের সম্পর্কে</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/contact/">যোগাযোগ</a>
-  </nav>
-</header>
+</div>
 
 <script>
-  const button = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
-  button?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
+  const drawer = document.getElementById('mobile-drawer');
+  const openButton = document.getElementById('mobile-menu-open');
+  const closeButton = document.getElementById('mobile-menu-close');
+  const overlay = document.getElementById('mobile-menu-overlay');
+
+  const openMenu = () => drawer?.classList.remove('hidden');
+  const closeMenu = () => drawer?.classList.add('hidden');
+
+  openButton?.addEventListener('click', openMenu);
+  closeButton?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  const desktopDropdowns = [...document.querySelectorAll('#desktop-main-nav .nav-dropdown')];
+  desktopDropdowns.forEach((dropdown) => {
+    dropdown.addEventListener('toggle', () => {
+      if (!dropdown.open) return;
+      desktopDropdowns.forEach((other) => {
+        if (other !== dropdown) other.removeAttribute('open');
+      });
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    const nav = document.getElementById('desktop-main-nav');
+    if (!nav?.contains(event.target)) {
+      desktopDropdowns.forEach((dropdown) => dropdown.removeAttribute('open'));
+    }
+  });
+
+  const mobileDropdowns = [...document.querySelectorAll('#mobile-main-nav .nav-dropdown-mobile')];
+  mobileDropdowns.forEach((dropdown) => {
+    dropdown.addEventListener('toggle', () => {
+      if (!dropdown.open) return;
+      mobileDropdowns.forEach((other) => {
+        if (other !== dropdown) other.removeAttribute('open');
+      });
+    });
   });
 </script>

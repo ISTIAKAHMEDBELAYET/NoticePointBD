@@ -1,63 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" role="img" aria-label="NoticePointBD animated logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 130" role="img" aria-label="NoticePointBD animated logo">
   <defs>
     <linearGradient id="npbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1d4ed8" />
       <stop offset="100%" stop-color="#0ea5e9" />
     </linearGradient>
-    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
+    @font-face {
+      font-family: 'NPB-Billy';
+      src: url('/fonts/BillyArgel.otf') format('opentype');
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'NPB-Solaiman';
+      src: url('/fonts/SolaimanLipi.ttf') format('truetype');
+      font-display: swap;
+    }
     .pulse-ring {
-      transform-origin: 65px 65px;
-      animation: ringPulse 2.4s ease-in-out infinite;
+      transform-origin: 62px 65px;
+      animation: ringPulse 2.3s ease-in-out infinite;
     }
     .pulse-dot {
-      transform-origin: 65px 65px;
-      animation: dotBeat 1.2s ease-in-out infinite;
+      transform-origin: 62px 65px;
+      animation: dotBeat 1.15s ease-in-out infinite;
     }
     .shine {
-      animation: shineMove 3.6s linear infinite;
+      animation: shineMove 3.5s linear infinite;
+    }
+    .brand-name {
+      font-family: 'NPB-Billy', 'Billy Argel Fonts', 'Billy Argel', 'Segoe UI', 'Trebuchet MS', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .brand-sub {
+      font-family: 'NPB-Solaiman', 'SolaimanLipi', 'Noto Serif Bengali', 'Noto Sans Bengali', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.1px;
     }
     @keyframes ringPulse {
       0%, 100% { transform: scale(1); opacity: 0.95; }
-      50% { transform: scale(1.08); opacity: 0.55; }
+      50% { transform: scale(1.08); opacity: 0.6; }
     }
     @keyframes dotBeat {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.18); }
+      50% { transform: scale(1.16); }
     }
     @keyframes shineMove {
-      0% { transform: translateX(-120px); opacity: 0; }
-      10% { opacity: 0.65; }
-      60% { opacity: 0.65; }
-      100% { transform: translateX(380px); opacity: 0; }
+      0% { transform: translateX(-100px); opacity: 0; }
+      15% { opacity: 0.7; }
+      65% { opacity: 0.7; }
+      100% { transform: translateX(350px); opacity: 0; }
     }
   </style>
 
-  <rect x="0" y="0" width="520" height="130" rx="16" fill="#ffffff" />
+  <rect x="0" y="0" width="500" height="130" rx="14" fill="#ffffff" />
 
-  <g filter="url(#softGlow)">
-    <circle class="pulse-ring" cx="65" cy="65" r="34" fill="none" stroke="url(#npbGrad)" stroke-width="9" />
-    <circle class="pulse-dot" cx="65" cy="65" r="12" fill="url(#npbGrad)" />
+  <g>
+    <circle class="pulse-ring" cx="62" cy="65" r="32" fill="none" stroke="url(#npbGrad)" stroke-width="8" />
+    <circle class="pulse-dot" cx="62" cy="65" r="11" fill="url(#npbGrad)" />
   </g>
 
-  <path d="M98 37h4v56h-4z" fill="#e5e7eb" />
-  <text x="118" y="62" font-family="'Hind Siliguri', Arial, sans-serif" font-size="34" font-weight="700" fill="#1e3a8a">
-    NoticePoint
+  <path d="M96 37h4v56h-4z" fill="#e5e7eb" />
+  <text x="114" y="68" class="brand-name" font-size="35" fill="#1e3a8a">
+    NoticePointBD
   </text>
-  <text x="351" y="62" font-family="'Hind Siliguri', Arial, sans-serif" font-size="34" font-weight="700" fill="#0284c7">
-    BD
-  </text>
-  <text x="118" y="90" font-family="'Hind Siliguri', Arial, sans-serif" font-size="17" font-weight="500" fill="#4b5563">
+  <text x="114" y="93" class="brand-sub" font-size="16" fill="#4b5563">
     চাকরি, ভর্তি, ফলাফল ও নোটিশ
   </text>
-
-  <rect class="shine" x="0" y="24" width="64" height="4" rx="2" fill="#93c5fd" />
+  <rect class="shine" x="0" y="23" width="64" height="4" rx="2" fill="#93c5fd" />
 </svg>

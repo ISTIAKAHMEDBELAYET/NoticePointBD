@@ -34,16 +34,64 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? new URL('https://not
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <slot name="head" />
   </head>
-  <body class="bg-[#efefef] text-[#1f2937]" style="font-family:'Hind Siliguri',sans-serif;">
+  <body class="bg-[#efefef] text-[#1f2937]" style="font-family:'Noto Sans Bengali',sans-serif;">
     <Header />
     <main class="mx-auto min-h-[60vh] w-full max-w-[1200px] px-2 md:px-3">
       <slot />
     </main>
     <Footer />
+
+    <script>
+      const revealTargets = document.querySelectorAll('.np-fade-up');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      revealTargets.forEach((target) => observer.observe(target));
+    </script>
+
+    <style is:global>
+      .np-panel {
+        border: 1px solid #d1d5db;
+        background: #fff;
+      }
+      .np-hover {
+        transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+      }
+      .np-hover:hover {
+        transform: translateY(-2px);
+        border-color: #93c5fd;
+        box-shadow: 0 10px 20px rgba(2, 6, 23, 0.08);
+      }
+      .np-fade-up {
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 420ms ease, transform 420ms ease;
+      }
+      .np-fade-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .np-hover,
+        .np-fade-up {
+          transition: none;
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
   </body>
 </html>
