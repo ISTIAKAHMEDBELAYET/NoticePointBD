@@ -4,8 +4,8 @@ import FilterBar from '../../../../components/FilterBar.astro';
 import HotStrip from '../../../../components/HotStrip.astro';
 import PostCard from '../../../../components/PostCard.astro';
 import Pagination from '../../../../components/Pagination.astro';
-import WidgetArea from '../../../../components/WidgetArea.astro';
-import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../../../../lib/content-utils';
+import Sidebar from '../../../../components/Sidebar.astro';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts, getCategoryLabelBn } from '../../../../lib/content-utils';
 
 export async function getStaticPaths() {
   const allPosts = sortPostsByDate((await Astro.glob('../../../../content/**/*.md')).filter((post) => post.frontmatter?.slug));
@@ -47,15 +47,19 @@ const hotPosts = allPosts.filter((post) => post.frontmatter?.hot).slice(0, 3);
   description={`Browse ${category} posts page ${currentPage} on NoticePointBD.`}
 >
   <section class="my-8">
-    <h1 class="mb-6 text-3xl font-bold capitalize">{category} - Page {currentPage}</h1>
+    <h1 class="mb-6 text-3xl font-bold">{getCategoryLabelBn(category)} - পেজ {currentPage}</h1>
     <FilterBar categories={categories} />
-    <HotStrip posts={hotPosts} />
-    <div class="space-y-6">
-      {pagedPosts.map((post) => (
-        <PostCard post={post} />
-      ))}
+    <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <div>
+        <HotStrip posts={hotPosts} />
+        <div class="space-y-6">
+          {pagedPosts.map((post) => (
+            <PostCard post={post} />
+          ))}
+        </div>
+        <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/category/${category}`} />
+      </div>
+      <Sidebar categories={categories} recentPosts={recentPosts} />
     </div>
-    <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/category/${category}`} />
-    <WidgetArea categories={categories} recentPosts={recentPosts} />
   </section>
 </BaseLayout>

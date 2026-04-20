@@ -3,7 +3,8 @@ import BaseLayout from './BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import QuickInfoBox from '../components/QuickInfoBox.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
-import WidgetArea from '../components/WidgetArea.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { getCategoryLabelBn } from '../lib/content-utils';
 
 const { post, relatedPosts = [], categories = [], recentPosts = [], schema = null } = Astro.props;
 const { frontmatter } = post;
@@ -12,76 +13,83 @@ const { frontmatter } = post;
 <BaseLayout
   title={`${frontmatter.title} - NoticePointBD`}
   description={frontmatter.description ?? 'Latest notice from NoticePointBD'}
-  image={frontmatter.image ?? '/images/logo.png'}
+  image={frontmatter.image ?? '/images/logo-animated.svg'}
   type="article"
   schema={schema}
 >
-  <article class="mx-auto my-8 max-w-4xl rounded-lg bg-white p-6 shadow-sm">
-    <Breadcrumb
-      items={[
-        ...(frontmatter.categories?.[0] ? [{ label: frontmatter.categories[0], href: `/category/${frontmatter.categories[0]}/` }] : []),
-        { label: frontmatter.title },
-      ]}
-    />
+  <section class="my-8 grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
+    <div>
+      <article class="border border-gray-300 bg-white p-4 md:p-5">
+        <Breadcrumb
+          items={[
+            ...(frontmatter.categories?.[0]
+              ? [{ label: getCategoryLabelBn(frontmatter.categories[0]), href: `/category/${frontmatter.categories[0]}/` }]
+              : []),
+            { label: frontmatter.title },
+          ]}
+        />
 
-    <h1 class="mb-2 text-3xl font-bold">{frontmatter.title}</h1>
-    <p class="mb-2 text-sm text-gray-500">Published: {frontmatter.date}</p>
-    <div class="mb-4 flex flex-wrap gap-2">
-      {(frontmatter.categories ?? []).map((category) => (
-        <a class="rounded bg-gray-100 px-2 py-1 text-xs hover:bg-gray-200" href={`/category/${category}/`}>
-          {category}
-        </a>
-      ))}
+        <h1 class="mb-2 text-3xl font-bold">{frontmatter.title}</h1>
+        <p class="mb-2 text-sm text-gray-500">প্রকাশের তারিখ: {frontmatter.date}</p>
+        <div class="mb-4 flex flex-wrap gap-2">
+          {(frontmatter.categories ?? []).map((category) => (
+            <a class="rounded bg-gray-100 px-2 py-1 text-xs hover:bg-gray-200" href={`/category/${category}/`}>
+              {getCategoryLabelBn(category)}
+            </a>
+          ))}
+        </div>
+
+        {frontmatter.image && (
+          <img
+            src={frontmatter.image}
+            alt={frontmatter.imageAlt ?? frontmatter.title}
+            class="mb-6 max-h-[430px] w-full object-cover"
+          />
+        )}
+
+        <QuickInfoBox frontmatter={frontmatter} />
+        <slot />
+
+        {frontmatter.applyLink && (
+          <p class="mt-6">
+            <a
+              href={frontmatter.applyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block rounded bg-green-600 px-5 py-2 font-semibold text-white hover:bg-green-700"
+            >
+              আবেদন করুন -&gt;
+            </a>
+          </p>
+        )}
+
+        <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+          <span class="font-semibold">শেয়ার:</span>
+          <a
+            class="rounded border px-3 py-1 hover:bg-gray-100"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`}
+          >
+            Facebook
+          </a>
+          <a
+            class="rounded border px-3 py-1 hover:bg-gray-100"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://wa.me/?text=${encodeURIComponent(`${frontmatter.title} ${Astro.url.toString()}`)}`}
+          >
+            WhatsApp
+          </a>
+          <button id="copy-link-button" class="rounded border px-3 py-1 hover:bg-gray-100">Copy Link</button>
+        </div>
+      </article>
+
+      <RelatedPosts posts={relatedPosts} />
     </div>
 
-    {frontmatter.image && (
-      <img
-        src={frontmatter.image}
-        alt={frontmatter.imageAlt ?? frontmatter.title}
-        class="mb-6 max-h-[420px] w-full rounded-lg object-cover"
-      />
-    )}
-
-    <QuickInfoBox frontmatter={frontmatter} />
-    <slot />
-
-    {frontmatter.applyLink && (
-      <p class="mt-6">
-        <a
-          href={frontmatter.applyLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block rounded bg-green-600 px-5 py-2 font-semibold text-white hover:bg-green-700"
-        >
-          Avedon Korun -&gt;
-        </a>
-      </p>
-    )}
-
-    <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
-      <span class="font-semibold">Share:</span>
-      <a
-        class="rounded border px-3 py-1 hover:bg-gray-100"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`}
-      >
-        Facebook
-      </a>
-      <a
-        class="rounded border px-3 py-1 hover:bg-gray-100"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={`https://wa.me/?text=${encodeURIComponent(`${frontmatter.title} ${Astro.url.toString()}`)}`}
-      >
-        WhatsApp
-      </a>
-      <button id="copy-link-button" class="rounded border px-3 py-1 hover:bg-gray-100">Copy Link</button>
-    </div>
-  </article>
-
-  <RelatedPosts posts={relatedPosts} />
-  <WidgetArea categories={categories} recentPosts={recentPosts} />
+    <Sidebar categories={categories} recentPosts={recentPosts} />
+  </section>
 </BaseLayout>
 
 <script>

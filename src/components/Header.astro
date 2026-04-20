@@ -27,17 +27,20 @@ const folafolLinks = [
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-blue-100 bg-white">
-  <div class="mx-auto flex max-w-[1100px] items-center justify-between px-3 py-3">
+<header class="sticky top-0 z-50 border-b border-gray-300 bg-white">
+  <div class="mx-auto flex max-w-[1200px] items-center justify-between px-2 py-3">
     <a class="flex items-center gap-2" href="/">
-      <img src="/images/logo.png" alt="NoticePointBD লোগো" class="h-10 w-auto" loading="eager" />
+      <img src="/images/logo-animated.svg" alt="NoticePointBD লোগো" class="h-10 w-auto" loading="eager" />
       <span class="text-lg font-bold text-blue-700 md:text-xl">NoticePointBD</span>
     </a>
     <button id="mobile-menu-button" class="rounded border px-3 py-1 text-sm md:hidden">মেনু</button>
-    <nav class="hidden items-center gap-1 text-sm font-medium text-gray-800 md:flex">
-      <a class="rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700" href="/">হোম</a>
+  </div>
+
+  <div class="hidden border-t border-gray-300 bg-[#1f2937] md:block">
+    <nav class="mx-auto flex max-w-[1200px] items-center gap-1 px-2 py-2 text-[15px] font-medium text-white">
+      <a class="rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/">হোম</a>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">চাকরি</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">চাকরি</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {chakriLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
@@ -45,7 +48,7 @@ const folafolLinks = [
         </ul>
       </details>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">ভর্তি</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">ভর্তি</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {vortiLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
@@ -53,25 +56,26 @@ const folafolLinks = [
         </ul>
       </details>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">ফলাফল</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">ফলাফল</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {folafolLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
           ))}
         </ul>
       </details>
-      <a class="rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700" href="/category/blog/">ব্লগ</a>
+      <a class="rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/category/blog/">ব্লগ</a>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">টুলস</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-white/10 hover:text-white">টুলস</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a></li>
           <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a></li>
         </ul>
       </details>
+      <a class="ml-auto rounded px-2 py-1 hover:bg-white/15 hover:text-white" href="/search/" aria-label="Search">🔍</a>
     </nav>
   </div>
 
-  <nav id="mobile-menu" class="mx-auto hidden max-w-[1100px] space-y-2 border-t border-gray-100 px-3 py-3 text-sm md:hidden">
+  <nav id="mobile-menu" class="mx-auto hidden max-w-[1200px] space-y-2 border-t border-gray-200 px-2 py-3 text-sm md:hidden">
     <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/">হোম</a>
     <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/government-jobs/">সরকারি চাকরি</a>
     <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/admission/">ভর্তি</a>

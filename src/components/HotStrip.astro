@@ -7,7 +7,7 @@ const { posts = [] } = Astro.props;
     {posts.map((post) => (
       <a
         href={`/${post.frontmatter.slug}/`}
-        class="flex items-center gap-2 rounded border border-yellow-300 bg-yellow-50 px-3 py-2 text-sm font-semibold text-yellow-900 hover:bg-yellow-100"
+        class="flex items-center gap-2 border border-yellow-300 bg-yellow-50 px-3 py-2 text-sm font-semibold text-yellow-900 hover:bg-yellow-100"
       >
         <span class="rounded bg-red-600 px-2 py-0.5 text-xs text-white">হট</span>
         <span>{post.frontmatter.title}</span>

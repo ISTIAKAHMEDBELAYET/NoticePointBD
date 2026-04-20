@@ -4,7 +4,7 @@ import FilterBar from '../../components/FilterBar.astro';
 import HotStrip from '../../components/HotStrip.astro';
 import PostCard from '../../components/PostCard.astro';
 import Pagination from '../../components/Pagination.astro';
-import WidgetArea from '../../components/WidgetArea.astro';
+import Sidebar from '../../components/Sidebar.astro';
 import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../../lib/content-utils';
 
 export async function getStaticPaths() {
@@ -28,17 +28,19 @@ const { currentPage, totalPages, pagedPosts } = paginatePosts(allPosts, page, PO
   description={`Browse page ${currentPage} of latest NoticePointBD posts.`}
 >
   <section class="my-8">
-    <h1 class="mb-6 text-3xl font-bold">Latest Updates - Page {currentPage}</h1>
+    <h1 class="mb-6 text-3xl font-bold">সর্বশেষ আপডেট - পেজ {currentPage}</h1>
     <FilterBar categories={categories} />
-    <HotStrip posts={hotPosts} />
-
-    <div class="space-y-6">
-      {pagedPosts.map((post) => (
-        <PostCard post={post} />
-      ))}
+    <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <div>
+        <HotStrip posts={hotPosts} />
+        <div class="space-y-6">
+          {pagedPosts.map((post) => (
+            <PostCard post={post} />
+          ))}
+        </div>
+        <Pagination currentPage={currentPage} totalPages={totalPages} basePath="" />
+      </div>
+      <Sidebar categories={categories} recentPosts={recentPosts} />
     </div>
-
-    <Pagination currentPage={currentPage} totalPages={totalPages} basePath="" />
-    <WidgetArea categories={categories} recentPosts={recentPosts} />
   </section>
 </BaseLayout>

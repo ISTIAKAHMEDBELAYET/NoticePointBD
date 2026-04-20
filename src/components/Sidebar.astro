@@ -1,0 +1,46 @@
+---
+import { getCategoryLabelBn } from '../lib/content-utils';
+
+const { categories = [], recentPosts = [] } = Astro.props;
+---
+
+<aside class="space-y-4">
+  <section class="border border-gray-300 bg-white p-4">
+    <h3 class="mb-2 text-base font-bold">এখানে খুঁজুন</h3>
+    <form action="/search/" class="flex">
+      <input
+        type="text"
+        name="q"
+        class="w-full rounded-l border border-gray-300 px-3 py-2 text-sm"
+        placeholder="Search..."
+      />
+      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-sm text-white">Search</button>
+    </form>
+  </section>
+
+  <section class="border border-gray-300 bg-white p-4">
+    <h3 class="mb-2 text-base font-bold">সব ক্যাটাগরি</h3>
+    <ul class="space-y-1 text-sm">
+      {categories.map((category) => (
+        <li>
+          <a class="text-gray-700 hover:text-blue-700 hover:underline" href={`/category/${category}/`}>
+            {getCategoryLabelBn(category)}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="border border-gray-300 bg-white p-4">
+    <h3 class="mb-2 text-base font-bold">সাম্প্রতিক পোস্ট</h3>
+    <ul class="space-y-2 text-sm">
+      {recentPosts.map((post) => (
+        <li>
+          <a class="text-gray-700 hover:text-blue-700 hover:underline" href={`/${post.frontmatter.slug}/`}>
+            {post.frontmatter.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</aside>

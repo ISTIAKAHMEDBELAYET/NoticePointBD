@@ -4,7 +4,7 @@ const { posts = [] } = Astro.props;
 
 {posts.length > 0 && (
   <section class="my-8">
-    <h2 class="mb-3 text-2xl font-bold">Related Posts</h2>
+    <h2 class="mb-3 text-2xl font-bold">সম্পর্কিত পোস্ট</h2>
     <div class="grid gap-4 md:grid-cols-3">
       {posts.map((post) => (
         <a href={`/${post.frontmatter.slug}/`} class="rounded-lg bg-white p-4 shadow-sm hover:shadow">
