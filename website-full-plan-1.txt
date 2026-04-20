@@ -1,0 +1,701 @@
+
+================================================================================
+       FULL WEBSITE PLANNING DOCUMENT
+       Project: BD Info Portal (Job + Admission + Result + Blog)
+       Inspired by: bdgovtjob.net
+       Hosting: GitHub + Cloudflare Pages
+       Framework: Astro + Tailwind CSS
+================================================================================
+Prepared: April 2026
+================================================================================
+
+
+================================================================================
+SECTION 1 — PROJECT OVERVIEW
+================================================================================
+Project Name   : NoticePointBD
+Project Type   : Static Information Portal
+Content Types  : Job Circular, Admission Notice, Exam Result, Blog Articles
+Tech Stack     : Astro (SSG) + Tailwind CSS + Fuse.js next.js
+Hosting        : Cloudflare Pages (Free)
+Source Code    : GitHub Repository (Free)
+Domain         : https://noticepointbd.pages.dev/
+CMS            : No CMS — Markdown files in GitHub repo
+Language       : Bangla + English mixed (like reference site)
+
+Goal:
+  Build a fast, SEO-optimized, free-to-host content portal similar to
+  bdgovtjob.net but expanded to cover Job Circulars, University Admissions,
+  Exam Results, and Blog articles — all under one site with clean WordPress-
+  style flat URLs.
+
+
+================================================================================
+SECTION 2 — SITE STRUCTURE & URL PLAN
+================================================================================
+
+URL STRUCTURE (WordPress-style flat slugs — NO /job/ or /post/ prefix):
+
+  Homepage         : yourdomain.com/
+  Single Post      : yourdomain.com/bangladesh-navy-job-circular-2026/
+  Single Post      : yourdomain.com/dhaka-university-admission-2026/
+  Single Post      : yourdomain.com/hsc-result-2026/
+  Single Post      : yourdomain.com/how-to-apply-teletalk/
+  Category Page    : yourdomain.com/category/government-jobs/
+  Category Page    : yourdomain.com/category/bank-jobs/
+  Category Page    : yourdomain.com/category/admission/
+  Category Page    : yourdomain.com/category/result/
+  Category Page    : yourdomain.com/category/blog/
+  Category Page    : yourdomain.com/category/defence-jobs/
+  Category Page    : yourdomain.com/category/hot-jobs/
+  Search Page      : yourdomain.com/search/
+  Age Calculator   : yourdomain.com/age-calculator/
+  About Page       : yourdomain.com/about/
+  Contact Page     : yourdomain.com/contact/
+  Privacy Policy   : yourdomain.com/privacy-policy/
+  Disclaimer       : yourdomain.com/disclaimer/
+  Terms            : yourdomain.com/terms-conditions/
+  404 Page         : yourdomain.com/404/
+  Sitemap          : yourdomain.com/sitemap.xml  (auto-generated)
+  Robots           : yourdomain.com/robots.txt
+
+PAGINATION:
+  yourdomain.com/page/2/
+  yourdomain.com/category/government-jobs/page/2/
+
+
+================================================================================
+SECTION 3 — CONTENT CATEGORIES (FULL LIST)
+================================================================================
+
+JOB CATEGORIES:
+  Slug                    Label (Bangla)                  Label (English)
+  -----------------------------------------------------------------------
+  all-jobs                সকল চাকরি                      All Jobs
+  government-jobs         সরকারি চাকরি                   Government Jobs
+  bank-jobs               ব্যাংক চাকরি                   Bank Jobs
+  private-jobs            প্রাইভেট চাকরি                 Private Jobs
+  ngo-jobs                এনজিও চাকরি                    NGO Jobs
+  defence-jobs            ডিফেন্স চাকরি                  Defence Jobs
+  university-jobs         বিশ্ববিদ্যালয় চাকরি           University Jobs
+  pharmaceuticals-jobs    ফার্মাসিউটিক্যালস চাকরি       Pharmaceuticals Jobs
+  company-jobs            গ্রুপ অব কোম্পানি চাকরি       Group of Company Jobs
+  teletalk-application    অনলাইন আবেদন                   Online Application
+  hot-jobs                হট জবস                         Hot Jobs
+  weekly-jobs             সাপ্তাহিক চাকরির খবর           Weekly Job News
+
+ADMISSION CATEGORIES:
+  Slug                    Label
+  -----------------------------------------------------------------------
+  admission               সকল ভর্তি বিজ্ঞপ্তি
+  university-admission    বিশ্ববিদ্যালয় ভর্তি
+  medical-admission       মেডিকেল ভর্তি
+  college-admission       কলেজ ভর্তি
+  school-admission        স্কুল ভর্তি
+
+RESULT CATEGORIES:
+  Slug                    Label
+  -----------------------------------------------------------------------
+  result                  সকল ফলাফল
+  ssc-result              SSC ফলাফল
+  hsc-result              HSC ফলাফল
+  university-result       বিশ্ববিদ্যালয় ফলাফল
+  job-exam-result         চাকরির পরীক্ষার ফলাফল
+
+BLOG / OTHER:
+  Slug                    Label
+  -----------------------------------------------------------------------
+  blog                    ব্লগ
+  notice                  নোটিশ
+
+
+================================================================================
+SECTION 4 — HOMEPAGE LAYOUT (EXACT SECTION-BY-SECTION)
+================================================================================
+
++-----------------------------------------------------------------------------+
+|  ZONE 1 — HEADER                                                            |
+|  -----------------------------------------------------------------------    |
+|  Row 1 (Logo Bar):                                                          |
+|    [SITE LOGO]                         [Optional: Ad Banner 728x90]         |
+|                                                                             |
+|  Row 2 (Main Nav):                                                          |
+|    Home | Chakri (v) | Vorti (v) | Folafol (v) | Blog | Tools (v)          |
+|                                                                             |
+|    Dropdown - Chakri:                Dropdown - Vorti:                      |
+|      - Sorkari Chakri                  - Bishwobidyalay Vorti               |
+|      - Bank Chakri                     - Medical Vorti                      |
+|      - Private Chakri                  - College Vorti                      |
+|      - Defence Chakri                                                       |
+|      - NGO Chakri                    Dropdown - Folafol:                    |
+|      - Bishwobidyalay Chakri           - SSC Folafol                        |
+|      - Hot Jobs                        - HSC Folafol                        |
+|      - Online Avedon                   - Bishwobidyalay Folafol             |
+|                                                                             |
+|    Dropdown - Tools:                                                        |
+|      - Age Calculator                                                       |
+|      - Smart Search                                                         |
+|      - Teletalk Apply Guide                                                 |
+|                                                                             |
+|  Mobile: Hamburger menu --- slides out full nav                             |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 2 — FILTER BAR (below header, above posts)                           |
+|  -----------------------------------------------------------------------    |
+|  [Category v]  [Deadline Range v]  [Publish Date v]  [Search Button]       |
+|                                                                             |
+|  Category options : All | Govt | Bank | Admission | Result | Blog ...      |
+|  Deadline options : Any | Today | 3 days | 7 days | 15 days                |
+|  Date options     : Any | Last 24hrs | Last 3 days | Last 7 days           |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 3 — HOT / FEATURED POSTS STRIP (top of main feed)                   |
+|  -----------------------------------------------------------------------    |
+|  [HOT] Bangladesh Navy Circular 2026 — Deadline: 20 April                  |
+|  [HOT] Prison Job Circular 2026 — 472 Posts                                |
+|  [HOT] HSC Admission 2026 Notice                                           |
+|                                                                             |
+|  Small horizontal strip OR 3-column grid on desktop                        |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 4 — MAIN POST FEED (full width, single column like bdgovtjob.net)    |
+|  -----------------------------------------------------------------------    |
+|                                                                             |
+|  Each Post Card:                                                            |
+|  +-------------------------------------------------------------------------+|
+|  |  H2: Post Title (clickable link to full post)                          ||
+|  |  Date: 19 April 2026    Tags: [Sorkari Chakri] [Defence] [Hot Jobs]    ||
+|  |                                                                         ||
+|  |  [Featured Image — 768x427px landscape, full width]                    ||
+|  |                                                                         ||
+|  |  Podir Sonkha: 450          Avedon Shesh Tarikh: 20 April 2026         ||
+|  |  (for job/admission only)   (for job/admission only)                   ||
+|  |                                                                         ||
+|  |  [Bistharito Porun ->]  (Read More link)                               ||
+|  +-------------------------------------------------------------------------+|
+|                                                                             |
+|  [ Repeats for each post — 10 posts per page ]                             |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 5 — PAGINATION                                                        |
+|  -----------------------------------------------------------------------    |
+|            <- Prev  |  1  |  2  |  3  |  ...  |  149  |  Next ->           |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 6 — BOTTOM WIDGET AREA (before footer, same as bdgovtjob.net)       |
+|  -----------------------------------------------------------------------    |
+|                                                                             |
+|  Widget 1 — Search Box:                                                     |
+|    Ekhane Khujun...                                                         |
+|    [_________________________________] [Search]                             |
+|                                                                             |
+|  Widget 2 — Category List:                                                  |
+|    All Categories:                                                          |
+|    - Shokal Chakri          - Vorti Biggopti                               |
+|    - Sorkari Chakri         - SSC/HSC Folafol                              |
+|    - Bank Chakri            - Blog                                         |
+|    - Private Chakri         - Age Calculator                               |
+|    - Defence Chakri         - Smart Search                                 |
+|    - NGO Chakri                                                             |
+|                                                                             |
+|  Widget 3 — Recent Posts (optional last 5 titles with dates)               |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+|  ZONE 7 — FOOTER                                                            |
+|  -----------------------------------------------------------------------    |
+|  Row 1: Home | About | Contact | Privacy Policy | Disclaimer | Terms       |
+|  Row 2: (c) 2026 [Site Name] — All Rights Reserved                         |
++-----------------------------------------------------------------------------+
+
+
+================================================================================
+SECTION 5 — POST CARD FIELDS BY CONTENT TYPE
+================================================================================
+
+Field                     Job       Admission   Result    Blog
+-----------------------------------------------------------------------
+Title (H2, linked)        YES       YES         YES       YES
+Publish Date              YES       YES         YES       YES
+Featured Image            YES       YES         YES       YES
+Type Badge                YES       YES         YES       YES
+Podir Sonkha (vacancies)  YES       NO          NO        NO
+Avedon Deadline           YES       YES         NO        NO
+Folafol Date              NO        NO          YES       NO
+Excerpt text              NO        NO          NO        YES
+Hot Badge                 YES       YES         NO        NO
+Category Tags             YES       YES         YES       YES
+Bistharito Porun link     YES       YES         YES       YES
+
+
+================================================================================
+SECTION 6 — SINGLE POST PAGE LAYOUT
+================================================================================
+
+URL: yourdomain.com/bangladesh-navy-job-circular-2026/
+
+Layout (single column, full width — NO sidebar, same as bdgovtjob.net):
+
+  [HEADER — same as homepage]
+
+  Breadcrumb: Home > Sorkari Chakri > Bangladesh Navy Job Circular 2026
+
+  H1: Bangladesh Navy Job Circular 2026
+
+  Published: 19 April 2026
+  Categories: [Sorkari Chakri] [Defence] [Hot Jobs]
+
+  [Featured Image — full width, 768x427]
+
+  +---------------------------------------+
+  |  Quick Info Box                       |
+  |  Podir Sonkha       : 450             |
+  |  Avedon Shesh Tarikh: 20 April 2026   |
+  |  Avedon Dhoron      : Teletalk        |
+  |  Shongstha          : BD Navy         |
+  +---------------------------------------+
+
+  [Full Markdown content — H2, H3, tables, paragraphs, images]
+
+  [Apply Button: Avedon Korun ->]  (links to official site)
+
+  [Share: Facebook | WhatsApp | Copy Link]
+
+  [Tags: navy, defence, teletalk, government]
+
+  Related Posts (3 cards — same category)
+
+  [BOTTOM WIDGET AREA — same as homepage]
+  [FOOTER — same as homepage]
+
+
+================================================================================
+SECTION 7 — MARKDOWN FILE FORMAT (FRONTMATTER)
+================================================================================
+
+Every post is ONE .md file. Filename = URL slug.
+
+--- JOB POST ---
+File: /src/content/bangladesh-navy-job-circular-2026.md
+
+---
+title: "Bangladesh Navy Job Circular 2026"
+slug: "bangladesh-navy-job-circular-2026"
+type: "job"
+categories:
+  - "government-jobs"
+  - "defence-jobs"
+  - "hot-jobs"
+  - "teletalk-application"
+date: "2026-04-19"
+deadline: "2026-04-20"
+vacancies: "450"
+organization: "Bangladesh Navy"
+applyLink: "https://joinnavy.mil.bd"
+applyType: "Teletalk"
+hot: true
+image: "/images/bangladesh-navy-job-circular-2026.jpg"
+imageAlt: "Bangladesh Navy Job Circular 2026"
+description: "Bangladesh Navy recruiting 450 posts in 2026. Apply via Teletalk before 20 April."
+---
+
+Full post content in Markdown goes here...
+
+## Post Talika (Position List)
+...
+
+## Avedon Jagyota (Eligibility)
+...
+
+## Avedon Prokriya (Application Process)
+...
+
+-----------------------------------------------------------------------
+
+--- ADMISSION POST ---
+File: /src/content/dhaka-university-admission-2026.md
+
+---
+title: "Dhaka University Admission 2026"
+slug: "dhaka-university-admission-2026"
+type: "admission"
+categories:
+  - "admission"
+  - "university-admission"
+date: "2026-04-18"
+deadline: "2026-04-30"
+organization: "Dhaka University"
+applyLink: "https://admission.eis.du.ac.bd"
+hot: true
+image: "/images/dhaka-university-admission-2026.jpg"
+imageAlt: "Dhaka University Admission 2026"
+description: "Dhaka University admission circular 2026 published. Apply before 30 April."
+---
+
+-----------------------------------------------------------------------
+
+--- RESULT POST ---
+File: /src/content/hsc-result-2026.md
+
+---
+title: "HSC Result 2026"
+slug: "hsc-result-2026"
+type: "result"
+categories:
+  - "result"
+  - "hsc-result"
+date: "2026-04-15"
+resultDate: "26 April 2026"
+organization: "Bangladesh Education Board"
+image: "/images/hsc-result-2026.jpg"
+imageAlt: "HSC Result 2026"
+description: "HSC Result 2026 will be published on 26 April. Check how to see your result online."
+---
+
+-----------------------------------------------------------------------
+
+--- BLOG POST ---
+File: /src/content/how-to-apply-teletalk.md
+
+---
+title: "Teletalk-e Kivabe Avedon Korben — Complete Guide"
+slug: "how-to-apply-teletalk"
+type: "blog"
+categories:
+  - "blog"
+date: "2026-04-10"
+image: "/images/how-to-apply-teletalk.jpg"
+imageAlt: "Teletalk Application Guide Bangla"
+description: "Step by step guide on how to apply for government jobs via Teletalk SMS system."
+---
+
+
+================================================================================
+SECTION 8 — FULL FOLDER STRUCTURE
+================================================================================
+
+my-site/
+|
++-- public/
+|   +-- robots.txt
+|   +-- favicon.ico
+|   +-- images/
+|       +-- logo.png
+|       +-- bangladesh-navy-job-circular-2026.jpg
+|       +-- hsc-result-2026.jpg
+|       +-- (all post featured images here)
+|
++-- src/
+|   |
+|   +-- content/
+|   |   +-- bangladesh-navy-job-circular-2026.md
+|   |   +-- jail-police-job-circular-2026.md
+|   |   +-- dhaka-university-admission-2026.md
+|   |   +-- hsc-result-2026.md
+|   |   +-- how-to-apply-teletalk.md
+|   |   +-- (one .md file per post — filename = slug)
+|   |
+|   +-- pages/
+|   |   +-- index.astro                   <- Homepage
+|   |   +-- [slug].astro                  <- Single post (FLAT URL — no prefix)
+|   |   +-- search.astro                  <- Search page
+|   |   +-- age-calculator.astro          <- Age Calculator tool
+|   |   +-- about.astro
+|   |   +-- contact.astro
+|   |   +-- privacy-policy.astro
+|   |   +-- disclaimer.astro
+|   |   +-- terms-conditions.astro
+|   |   +-- 404.astro
+|   |   +-- category/
+|   |       +-- [category].astro          <- Category listing page
+|   |
+|   +-- components/
+|   |   +-- Header.astro                  <- Logo + Nav + Mobile menu
+|   |   +-- Footer.astro                  <- Links + Copyright
+|   |   +-- FilterBar.astro               <- Category + Deadline + Date filters
+|   |   +-- PostCard.astro                <- Reusable post card component
+|   |   +-- HotStrip.astro                <- Hot posts strip
+|   |   +-- Pagination.astro              <- Page 1, 2, 3...
+|   |   +-- WidgetArea.astro              <- Search + Category widgets
+|   |   +-- QuickInfoBox.astro            <- Vacancy + deadline box (single post)
+|   |   +-- RelatedPosts.astro            <- Bottom of single post
+|   |   +-- Breadcrumb.astro
+|   |   +-- SEOHead.astro                 <- All meta, OG tags, schema
+|   |   +-- AgeCalculator.astro           <- JS calculator component
+|   |
+|   +-- layouts/
+|       +-- BaseLayout.astro              <- HTML shell, SEOHead, Header, Footer
+|       +-- PostLayout.astro              <- Single post layout wrapper
+|
++-- astro.config.mjs                      <- Astro configuration
++-- tailwind.config.mjs                   <- Tailwind configuration
++-- package.json
++-- .gitignore
++-- README.md
+
+
+================================================================================
+SECTION 9 — SEO FULL PLAN
+================================================================================
+
+ON-PAGE SEO (per post — auto-generated from frontmatter):
+
+  <title>Bangladesh Navy Job Circular 2026 - YourSiteName</title>
+  <meta name="description" content="...from description field...">
+  <link rel="canonical" href="https://yourdomain.com/bangladesh-navy-job-circular-2026/">
+
+  Open Graph tags (Facebook / WhatsApp preview):
+  <meta property="og:title" ...>
+  <meta property="og:description" ...>
+  <meta property="og:image" content="https://yourdomain.com/images/....jpg">
+  <meta property="og:url" ...>
+  <meta property="og:type" content="article">
+
+  Twitter Card:
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" ...>
+  <meta name="twitter:image" ...>
+
+SCHEMA MARKUP (Structured Data):
+
+  For Job posts - JobPosting schema:
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Bangladesh Navy Job Circular 2026",
+    "datePosted": "2026-04-19",
+    "validThrough": "2026-04-20",
+    "hiringOrganization": { "name": "Bangladesh Navy" },
+    "jobLocation": { "address": { "addressCountry": "BD" } }
+  }
+
+  For Blog/Result/Admission - Article schema:
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "...",
+    "datePublished": "...",
+    "author": { "name": "Site Name" }
+  }
+
+TECHNICAL SEO:
+
+  [YES] Clean flat URLs (no query strings, no /type/slug)
+  [YES] Auto sitemap.xml via @astrojs/sitemap plugin
+  [YES] robots.txt in /public — allow all, point to sitemap
+  [YES] Image alt tags from imageAlt frontmatter field
+  [YES] H1 = post title (one per page only)
+  [YES] H2, H3 used properly inside content
+  [YES] Pagination with rel="next" and rel="prev"
+  [YES] Breadcrumb with schema markup
+  [YES] 301 redirect support via Cloudflare _redirects file
+  [YES] 100/100 Lighthouse score (static = blazing fast)
+  [YES] Core Web Vitals excellent (no JS runtime overhead)
+  [YES] Mobile responsive via Tailwind CSS
+
+CLOUDFLARE SEO EXTRAS:
+
+  [YES] Free SSL (HTTPS) — automatic
+  [YES] HTTP/2 and HTTP/3 — automatic
+  [YES] Brotli compression — automatic
+  [YES] Global CDN — fast loading from Bangladesh
+  [YES] www to non-www redirect (or vice versa)
+
+
+================================================================================
+SECTION 10 — HEADER ANATOMY (DETAILED)
+================================================================================
+
+DESKTOP HEADER:
+
+  +-------------------------------------------------------------------------+
+  |  [LOGO — links to /]                                                    |
+  +-------------------------------------------------------------------------+
+  |  Home  |  Chakri (v)  |  Vorti (v)  |  Folafol (v)  |  Blog  | Tools  |
+  +-------------------------------------------------------------------------+
+
+  Nav behavior:
+  - Home          -> links to /
+  - Chakri (v)    -> dropdown: Sorkari, Bank, Private, Defence, NGO,
+                               Bishwobidyalay, Hot Jobs, Online Avedon
+  - Vorti (v)     -> dropdown: Bishwobidyalay, Medical, College, School
+  - Folafol (v)   -> dropdown: SSC, HSC, Bishwobidyalay, Job Exam Result
+  - Blog          -> links to /category/blog/
+  - Tools (v)     -> dropdown: Age Calculator, Smart Search
+
+MOBILE HEADER:
+
+  +-------------------------------------------------------------------------+
+  |  [LOGO]                                                    [Menu (=)]   |
+  +-------------------------------------------------------------------------+
+
+  Hamburger click -> accordion-style slide-out nav with all items
+
+
+================================================================================
+SECTION 11 — FOOTER ANATOMY (DETAILED)
+================================================================================
+
+  +-------------------------------------------------------------------------+
+  |  Home | About | Contact | Privacy Policy | Disclaimer | Terms          |
+  +-------------------------------------------------------------------------+
+  |  (c) 2026 [Site Name] — All Rights Reserved                            |
+  +-------------------------------------------------------------------------+
+
+  INTENTIONALLY MINIMAL (same as bdgovtjob.net):
+  - No social media icons
+  - No newsletter form
+  - No multi-column layout
+  - No extra widgets
+  Reason: keeps it fast, clean, and focused on content
+
+
+================================================================================
+SECTION 12 — SPECIAL PAGES
+================================================================================
+
+AGE CALCULATOR PAGE (/age-calculator/):
+  - Input: Date of Birth (day / month / year selectors)
+  - Output: Current age in years, months, days
+  - Bonus: Shows if eligible for Govt job (18-30 years rule BD)
+  - Technology: Pure JavaScript — no backend needed
+  - SEO Note: Very high search traffic — "age calculator bd" is popular
+
+SMART SEARCH PAGE (/search/):
+  - Uses Fuse.js library (client-side fuzzy search)
+  - Searches: post titles, descriptions, categories, tags
+  - No backend or server-side processing needed
+  - Results update live as user types
+  - Each result shows: type badge, title, date, category
+
+CATEGORY PAGE (/category/government-jobs/):
+  - Same layout as homepage
+  - Only shows posts tagged with that category
+  - Own SEO title: "Sorkari Chakrir Khobor 2026 — YourSiteName"
+  - Pagination works per-category independently
+
+404 PAGE (/404/):
+  - Friendly Bangla error message
+  - Links to homepage and most popular categories
+  - Search box to help user find content
+
+
+================================================================================
+SECTION 13 — DEPLOYMENT WORKFLOW
+================================================================================
+
+INITIAL SETUP (one time only):
+
+  Step 1: Create GitHub repository
+          Go to github.com -> New Repository -> name it "my-site"
+
+  Step 2: Clone repo to your computer
+          git clone https://github.com/yourusername/my-site.git
+
+  Step 3: Install Astro and plugins
+          npm create astro@latest
+          npm install @astrojs/tailwind @astrojs/sitemap
+          npm install fuse.js
+
+  Step 4: Build your components, pages, layouts (see folder structure above)
+
+  Step 5: Push code to GitHub
+          git add .
+          git commit -m "initial site setup"
+          git push
+
+  Step 6: Connect to Cloudflare Pages
+          Cloudflare Dashboard -> Pages -> Create a project
+          -> Connect to Git -> Select your GitHub repo
+          Build command    : npm run build
+          Output directory : dist
+          Environment var  : NODE_VERSION = 18
+
+  Step 7: Add custom domain
+          Cloudflare Pages -> Custom domains -> Add your domain
+          Update your domain's nameservers to Cloudflare
+
+DAILY CONTENT PUBLISHING WORKFLOW:
+
+  1. Create new .md file in /src/content/
+     (filename must be the slug, e.g. bmet-job-circular-2026.md)
+  2. Fill frontmatter: title, type, deadline, vacancies, image, etc.
+  3. Write full content in Markdown below the --- frontmatter ---
+  4. Add the featured image JPG to /public/images/
+  5. Run: git add .
+  6. Run: git commit -m "add: bmet job circular 2026"
+  7. Run: git push
+  8. Cloudflare Pages auto-detects the push and rebuilds the site
+  9. New page is LIVE at yourdomain.com/bmet-job-circular-2026/ in ~30 seconds
+
+
+================================================================================
+SECTION 14 — COST BREAKDOWN
+================================================================================
+
+  Service                        Monthly       Yearly
+  -------------------------------------------------------
+  GitHub repository (public)     Free          Free
+  Cloudflare Pages hosting       Free          Free
+  Cloudflare SSL certificate     Free          Free
+  Cloudflare CDN bandwidth       Free          Free
+  Cloudflare DNS management      Free          Free
+  Custom .com domain             ~$0.83        ~$10
+  -------------------------------------------------------
+  TOTAL                          ~$0.83/mo     ~$10/yr
+
+  Cloudflare Pages Free Plan Limits:
+  - 500 builds per month (more than enough for daily publishing)
+  - Unlimited bandwidth
+  - Unlimited page requests
+  - Up to 100 custom domains
+
+
+================================================================================
+SECTION 15 — BUILD TIMELINE
+================================================================================
+
+  Phase   Task                                                   Time
+  -------------------------------------------------------------------
+  1       GitHub repo + Astro install + Tailwind setup           0.5 day
+  2       BaseLayout, Header, Footer, SEOHead components         1 day
+  3       Homepage: FilterBar, PostCard, HotStrip, Pagination    1 day
+  4       Single post page: QuickInfoBox, RelatedPosts           1 day
+  5       Category pages + per-category pagination               0.5 day
+  6       Search page (Fuse.js) + Age Calculator page            1 day
+  7       Static pages: About, Contact, Privacy, 404             0.5 day
+  8       Full SEO: sitemap, robots, schema markup, OG tags      0.5 day
+  9       Write 30 sample content posts in Markdown              1 day
+  10      Cloudflare Pages deploy + custom domain setup          0.5 day
+  -------------------------------------------------------------------
+  TOTAL                                                          ~7.5 days
+
+
+================================================================================
+SECTION 16 — FUTURE UPGRADE IDEAS
+================================================================================
+
+  Feature                        How to Build It
+  -----------------------------------------------------------------------
+  Telegram notification bot      Cloudflare Worker + Telegram Bot API
+  Auto content from RSS feeds    GitHub Action script -> commit new .md
+  Comment system                 Giscus (uses GitHub Discussions, free)
+  Newsletter signup              Mailchimp embedded form widget
+  Push notifications             Cloudflare Workers + Web Push API
+  No-code admin panel            Decap CMS (Netlify CMS) via GitHub
+  Analytics (no cookies)         Cloudflare Web Analytics (free)
+  Dark mode toggle               Tailwind dark: classes + localStorage
+  Multiple authors               Add "author" field to frontmatter
+  WhatsApp sharing button        Simple JS window.open share link
+  Deadline countdown timer       JavaScript countdown on post card
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================

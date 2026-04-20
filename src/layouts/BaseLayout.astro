@@ -1,0 +1,20 @@
+---
+// Base layout placeholder
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<html>
+  <head>
+    <slot name="head" />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <Header />
+    <main class="container mx-auto px-2">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
