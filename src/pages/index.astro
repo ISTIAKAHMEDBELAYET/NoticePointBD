@@ -32,7 +32,19 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
     <FilterBar categories={categories} />
     <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,70%)_minmax(0,30%)]">
       <div>
+        <div class="my-6 flex justify-center">
+          <span class="inline-block animate-blink-hotjobs rounded-full border-2 border-red-600 bg-white px-8 py-2 text-lg font-bold text-red-700 shadow-md">🔥 হট জবস</span>
+        </div>
         <div id="hot-strip-mount"></div>
+        <style>
+        @keyframes blink-hotjobs {
+          0%, 100% { background: #fff; color: #dc2626; border-color: #dc2626; }
+          50% { background: #dc2626; color: #fff; border-color: #fff; }
+        }
+        .animate-blink-hotjobs {
+          animation: blink-hotjobs 1.2s infinite;
+        }
+        </style>
         <script>
         // Track job post views in localStorage
         function trackJobView(slug) {
@@ -69,6 +81,10 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
           jobs.forEach(j => { j.count = (views[j.slug] || []).length; });
           jobs.sort((a, b) => b.count - a.count);
           const top10 = jobs.slice(0, 10);
+          while (top10.length < 10 && jobs.length > top10.length) {
+            // Fill with next most recent jobs if less than 10
+            top10.push(jobs[top10.length]);
+          }
           // Render HotStrip
           const mount = document.getElementById('hot-strip-mount');
           if (mount) {
