@@ -9,7 +9,16 @@ const { posts = [] } = Astro.props;
         href={`/${post.frontmatter.slug}/`}
         class="flex items-center gap-2 rounded-[10px] border border-yellow-300 bg-yellow-50 px-3 py-2 text-[16px] font-semibold text-yellow-900 hover:bg-yellow-100"
       >
-        <span class="rounded bg-red-600 px-2 py-0.5 text-xs text-white">হট</span>
+        <span class="rounded bg-red-600 px-2 py-0.5 text-xs text-white animate-blink">হট</span>
+        <style>
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.3; }
+        }
+        .animate-blink {
+          animation: blink 1s infinite;
+        }
+        </style>
         <span>{post.frontmatter.title}</span>
       </a>
     ))}
