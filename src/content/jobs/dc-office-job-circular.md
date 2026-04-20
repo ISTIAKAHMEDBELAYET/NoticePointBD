@@ -1,5 +1,5 @@
 ---
-title: "সকল জেলা প্রশাসকের কার্যালয়ে নিয়োগ ২০২৬ – DC Office Job Circular 2026"
+++ title: "সকল জেলা প্রশাসকের কার্যালয়ে নিয়োগ ২০২৬ – DC Office Job Circular 2026"
 slug: "dc-office-job-circular"
 type: "job"
 categories:
@@ -15,7 +15,6 @@ hot: false
 image: "/images/dc-office-job-circular.jpg"
 imageAlt: "DC Office Job Circular 2026"
 description: "DC Office job circular 2026. Application deadline 5 & 20 May 2026."
----
 
 ## পদের সংখ্যা
 ০৮+১৬
