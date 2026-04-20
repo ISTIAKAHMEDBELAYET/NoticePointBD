@@ -1,28 +1,30 @@
 ---
+import { getCategoryLabelBn } from '../lib/content-utils';
+
 const { categories = [], recentPosts = [] } = Astro.props;
 ---
 
 <section class="my-10 grid gap-6 rounded-lg bg-white p-6 shadow-sm md:grid-cols-3">
   <div>
-    <h3 class="mb-2 text-lg font-bold">Ekhane Khujun...</h3>
+    <h3 class="mb-2 text-lg font-bold">এখানে খুঁজুন...</h3>
     <form action="/search/" class="flex">
       <input
         type="text"
         name="q"
         class="w-full rounded-l border border-gray-300 px-3 py-2"
-        placeholder="Search keyword..."
+        placeholder="কি খুঁজতে চান?"
       />
-      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">Search</button>
+      <button type="submit" class="rounded-r bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">খুঁজুন</button>
     </form>
   </div>
 
   <div>
-    <h3 class="mb-2 text-lg font-bold">All Categories</h3>
+    <h3 class="mb-2 text-lg font-bold">সব ক্যাটাগরি</h3>
     <ul class="columns-2 gap-4 text-sm">
       {categories.map((category) => (
         <li class="mb-1">
           <a class="hover:text-blue-700 hover:underline" href={`/category/${category}/`}>
-            {category}
+            {getCategoryLabelBn(category)}
           </a>
         </li>
       ))}
@@ -30,7 +32,7 @@ const { categories = [], recentPosts = [] } = Astro.props;
   </div>
 
   <div>
-    <h3 class="mb-2 text-lg font-bold">Recent Posts</h3>
+    <h3 class="mb-2 text-lg font-bold">সাম্প্রতিক পোস্ট</h3>
     <ul class="space-y-1 text-sm">
       {recentPosts.map((post) => (
         <li>

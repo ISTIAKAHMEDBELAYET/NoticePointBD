@@ -1,29 +1,31 @@
 ---
+import { getCategoryLabelBn } from '../lib/content-utils';
+
 const { categories = [] } = Astro.props;
 ---
 
 <form id="filter-form" class="mb-6 grid gap-3 rounded-lg bg-white p-4 shadow-sm md:grid-cols-4">
   <select id="filter-category" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">All Categories</option>
+    <option value="">সব ক্যাটাগরি</option>
     {categories.map((category) => (
-      <option value={category}>{category}</option>
+      <option value={category}>{getCategoryLabelBn(category)}</option>
     ))}
   </select>
 
   <select id="filter-deadline" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">Any Deadline</option>
-    <option value="today">Today</option>
-    <option value="3">3 days</option>
-    <option value="7">7 days</option>
-    <option value="15">15 days</option>
+    <option value="">যেকোনো ডেডলাইন</option>
+    <option value="today">আজ</option>
+    <option value="3">৩ দিন</option>
+    <option value="7">৭ দিন</option>
+    <option value="15">১৫ দিন</option>
   </select>
 
   <select id="filter-date" class="rounded border border-gray-300 px-3 py-2 text-sm">
-    <option value="">Any Date</option>
-    <option value="1">Last 24hrs</option>
-    <option value="3">Last 3 days</option>
-    <option value="7">Last 7 days</option>
+    <option value="">যেকোনো প্রকাশ তারিখ</option>
+    <option value="1">শেষ ২৪ ঘণ্টা</option>
+    <option value="3">শেষ ৩ দিন</option>
+    <option value="7">শেষ ৭ দিন</option>
   </select>
 
-  <button type="submit" class="rounded bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">Search</button>
+  <button type="submit" class="rounded bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">খুঁজুন</button>
 </form>

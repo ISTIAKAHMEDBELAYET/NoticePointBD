@@ -15,19 +15,19 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
 ---
 
 <BaseLayout
-  title="NoticePointBD - Bangladesh Job Circular, Admission and Results"
-  description="Latest Bangladesh job circulars, admission updates, exam results, and blog guides."
+  title="NoticePointBD - বাংলাদেশের সর্বশেষ চাকরি, ভর্তি ও ফলাফল"
+  description="বাংলাদেশের সর্বশেষ চাকরির খবর, ভর্তি বিজ্ঞপ্তি, ফলাফল ও গুরুত্বপূর্ণ আপডেট এক জায়গায়।"
 >
-  <section class="my-8">
-    <h1 class="mb-2 text-3xl font-bold">Latest Updates</h1>
-    <p class="mb-6 text-gray-600">
-      NoticePointBD publishes jobs, admissions, results, and blog notices in one place with flat clean URLs.
+  <section class="my-6">
+    <h1 class="mb-1 text-3xl font-bold text-blue-800">সর্বশেষ আপডেট</h1>
+    <p class="mb-5 text-gray-700">
+      চাকরি, ভর্তি, ফলাফল ও প্রয়োজনীয় গাইড - সব একসাথে।
     </p>
 
     <FilterBar categories={categories} />
     <HotStrip posts={hotPosts} />
 
-    <div id="feed-list" class="space-y-6">
+    <div id="feed-list" class="space-y-5">
       {pagedPosts.map((post) => (
         <PostCard post={post} />
       ))}

@@ -15,7 +15,7 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site ?? new URL('https://noticepointbd.pages.dev')).toString();
 ---
 
-<html lang="en">
+<html lang="bn">
   <head>
     <SEOHead
       title={title}
@@ -31,11 +31,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? new URL('https://not
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2278011013110319"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <slot name="head" />
   </head>
-  <body class="bg-gray-50 text-gray-900">
+  <body class="bg-[#f5f7fb] text-gray-900" style="font-family:'Hind Siliguri',sans-serif;">
     <Header />
-    <main class="mx-auto min-h-[60vh] w-full max-w-6xl px-4">
+    <main class="mx-auto min-h-[60vh] w-full max-w-[1100px] px-3 md:px-4">
       <slot />
     </main>
     <Footer />

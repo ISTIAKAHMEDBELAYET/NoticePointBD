@@ -1,43 +1,43 @@
 ---
 const chakriLinks = [
-  ['government-jobs', 'Sorkari Chakri'],
-  ['bank-jobs', 'Bank Chakri'],
-  ['private-jobs', 'Private Chakri'],
-  ['defence-jobs', 'Defence Chakri'],
-  ['ngo-jobs', 'NGO Chakri'],
-  ['university-jobs', 'University Jobs'],
-  ['hot-jobs', 'Hot Jobs'],
-  ['teletalk-application', 'Online Avedon'],
+  ['government-jobs', 'সরকারি চাকরি'],
+  ['bank-jobs', 'ব্যাংক চাকরি'],
+  ['private-jobs', 'প্রাইভেট চাকরি'],
+  ['defence-jobs', 'ডিফেন্স চাকরি'],
+  ['ngo-jobs', 'এনজিও চাকরি'],
+  ['university-jobs', 'বিশ্ববিদ্যালয় চাকরি'],
+  ['hot-jobs', 'হট জবস'],
+  ['teletalk-application', 'অনলাইন আবেদন'],
 ];
 
 const vortiLinks = [
-  ['admission', 'All Admission'],
-  ['university-admission', 'University Admission'],
-  ['medical-admission', 'Medical Admission'],
-  ['college-admission', 'College Admission'],
-  ['school-admission', 'School Admission'],
+  ['admission', 'সকল ভর্তি'],
+  ['university-admission', 'বিশ্ববিদ্যালয় ভর্তি'],
+  ['medical-admission', 'মেডিকেল ভর্তি'],
+  ['college-admission', 'কলেজ ভর্তি'],
+  ['school-admission', 'স্কুল ভর্তি'],
 ];
 
 const folafolLinks = [
-  ['result', 'All Result'],
-  ['ssc-result', 'SSC Result'],
-  ['hsc-result', 'HSC Result'],
-  ['university-result', 'University Result'],
-  ['job-exam-result', 'Job Exam Result'],
+  ['result', 'সকল ফলাফল'],
+  ['ssc-result', 'এসএসসি ফলাফল'],
+  ['hsc-result', 'এইচএসসি ফলাফল'],
+  ['university-result', 'বিশ্ববিদ্যালয় ফলাফল'],
+  ['job-exam-result', 'চাকরি পরীক্ষার ফলাফল'],
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-    <a class="flex items-center gap-3" href="/">
-      <img src="/images/logo.png" alt="NoticePointBD Logo" class="h-10 w-auto" loading="eager" />
-      <span class="text-xl font-bold text-blue-700">NoticePointBD</span>
+<header class="sticky top-0 z-50 border-b border-blue-100 bg-white">
+  <div class="mx-auto flex max-w-[1100px] items-center justify-between px-3 py-3">
+    <a class="flex items-center gap-2" href="/">
+      <img src="/images/logo.png" alt="NoticePointBD লোগো" class="h-10 w-auto" loading="eager" />
+      <span class="text-lg font-bold text-blue-700 md:text-xl">NoticePointBD</span>
     </a>
-    <button id="mobile-menu-button" class="rounded border px-3 py-1 text-sm md:hidden">Menu</button>
-    <nav class="hidden items-center gap-2 text-sm font-medium text-gray-700 md:flex">
-      <a class="rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700" href="/">Home</a>
+    <button id="mobile-menu-button" class="rounded border px-3 py-1 text-sm md:hidden">মেনু</button>
+    <nav class="hidden items-center gap-1 text-sm font-medium text-gray-800 md:flex">
+      <a class="rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700" href="/">হোম</a>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Chakri</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">চাকরি</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {chakriLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
@@ -45,7 +45,7 @@ const folafolLinks = [
         </ul>
       </details>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Vorti</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">ভর্তি</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {vortiLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
@@ -53,16 +53,16 @@ const folafolLinks = [
         </ul>
       </details>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Folafol</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">ফলাফল</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           {folafolLinks.map(([slug, label]) => (
             <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href={`/category/${slug}/`}>{label}</a></li>
           ))}
         </ul>
       </details>
-      <a class="rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700" href="/category/blog/">Blog</a>
+      <a class="rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700" href="/category/blog/">ব্লগ</a>
       <details class="group relative">
-        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-gray-100 hover:text-blue-700">Tools</summary>
+        <summary class="cursor-pointer list-none rounded px-2 py-1 hover:bg-blue-50 hover:text-blue-700">টুলস</summary>
         <ul class="absolute left-0 mt-1 w-56 rounded border border-gray-200 bg-white p-2 shadow-lg">
           <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a></li>
           <li><a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a></li>
@@ -71,15 +71,15 @@ const folafolLinks = [
     </nav>
   </div>
 
-  <nav id="mobile-menu" class="mx-auto hidden max-w-6xl space-y-2 border-t border-gray-100 px-4 py-3 text-sm md:hidden">
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/">Home</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/government-jobs/">Sorkari Chakri</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/admission/">Admission</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/result/">Result</a>
+  <nav id="mobile-menu" class="mx-auto hidden max-w-[1100px] space-y-2 border-t border-gray-100 px-3 py-3 text-sm md:hidden">
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/">হোম</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/government-jobs/">সরকারি চাকরি</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/admission/">ভর্তি</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/category/result/">ফলাফল</a>
     <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/search/">Smart Search</a>
     <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/age-calculator/">Age Calculator</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/about/">About</a>
-    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/contact/">Contact</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/about/">আমাদের সম্পর্কে</a>
+    <a class="block rounded px-2 py-1 hover:bg-gray-100" href="/contact/">যোগাযোগ</a>
   </nav>
 </header>
 

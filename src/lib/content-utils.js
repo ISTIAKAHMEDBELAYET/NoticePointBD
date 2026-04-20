@@ -1,4 +1,34 @@
 export const POSTS_PER_PAGE = 10;
+export const CATEGORY_LABELS_BN = {
+  'all-jobs': 'সকল চাকরি',
+  'government-jobs': 'সরকারি চাকরি',
+  'bank-jobs': 'ব্যাংক চাকরি',
+  'private-jobs': 'প্রাইভেট চাকরি',
+  'ngo-jobs': 'এনজিও চাকরি',
+  'defence-jobs': 'ডিফেন্স চাকরি',
+  'university-jobs': 'বিশ্ববিদ্যালয় চাকরি',
+  'pharmaceuticals-jobs': 'ফার্মাসিউটিক্যালস চাকরি',
+  'company-jobs': 'কোম্পানি চাকরি',
+  'teletalk-application': 'অনলাইন আবেদন',
+  'hot-jobs': 'হট জবস',
+  'weekly-jobs': 'সাপ্তাহিক চাকরির খবর',
+  admission: 'সকল ভর্তি',
+  'university-admission': 'বিশ্ববিদ্যালয় ভর্তি',
+  'medical-admission': 'মেডিকেল ভর্তি',
+  'college-admission': 'কলেজ ভর্তি',
+  'school-admission': 'স্কুল ভর্তি',
+  result: 'সকল ফলাফল',
+  'ssc-result': 'এসএসসি ফলাফল',
+  'hsc-result': 'এইচএসসি ফলাফল',
+  'university-result': 'বিশ্ববিদ্যালয় ফলাফল',
+  'job-exam-result': 'চাকরির পরীক্ষার ফলাফল',
+  blog: 'ব্লগ',
+  notice: 'নোটিশ',
+};
+
+export function getCategoryLabelBn(slug) {
+  return CATEGORY_LABELS_BN[slug] ?? slug;
+}
 
 export function sortPostsByDate(posts) {
   return [...posts].sort((a, b) => {
