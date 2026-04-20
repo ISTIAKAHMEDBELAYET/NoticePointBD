@@ -17,8 +17,19 @@ const { pagedPosts, totalPages } = paginatePosts(allJobPosts, 1, POSTS_PER_PAGE)
   description="Find and filter all job circulars by category, deadline, and publish date."
 >
   <section class="my-6">
+    <style>
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(24px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
     <div class="flex justify-center mb-8">
-      <span class="inline-block rounded-full bg-[#166534] px-8 py-3 text-xl font-semibold text-white shadow-lg border-2 border-[#14532d] hover:bg-[#15803d] transition-all duration-200">Search Jobs</span>
+      <span
+        class="inline-block rounded-full bg-[#166534] px-8 py-3 text-xl font-semibold text-white shadow-lg border-2 border-[#14532d] hover:bg-[#15803d] hover:scale-105 hover:shadow-2xl transition-all duration-300"
+        style="animation: fadeInUp 0.7s cubic-bezier(0.4,0,0.2,1);"
+      >
+        Search Jobs
+      </span>
     </div>
     <FilterBar categories={jobCategories} />
     <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,70%)_minmax(0,30%)]">
