@@ -2,12 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FilterBar from '../components/FilterBar.astro';
 import PostCard from '../components/PostCard.astro';
-import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories } from '../lib/content-utils.js';
+import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../lib/content-utils.js';
 
 const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug));
 const categories = getUniqueCategories(allPosts);
 const pagedPosts = allPosts;
----
 
 <BaseLayout title="Smart Search - NoticePointBD" description="Smart search for jobs, admissions, results, and blog posts.">
   <section class="mx-auto my-8 max-w-4xl rounded-lg bg-white p-6 shadow-sm">
