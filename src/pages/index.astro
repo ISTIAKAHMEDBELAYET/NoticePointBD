@@ -7,7 +7,7 @@ import Pagination from '../components/Pagination.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } from '../lib/content-utils';
 
-const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug));
+const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug && ['job','admission','result'].includes(post.frontmatter?.type)));
 const categories = getUniqueCategories(allPosts);
 // Hot Jobs: top 10 most viewed job posts in last 12 hours (per visitor)
 const recentPosts = allPosts.slice(0, 5);
