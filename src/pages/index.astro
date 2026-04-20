@@ -10,14 +10,8 @@ import { POSTS_PER_PAGE, sortPostsByDate, getUniqueCategories, paginatePosts } f
 const allPosts = sortPostsByDate((await Astro.glob('../content/**/*.md')).filter((post) => post.frontmatter?.slug));
 const categories = getUniqueCategories(allPosts);
 // Hot Jobs: top 10 most viewed job posts in last 12 hours (per visitor)
-const jobPosts = allPosts.filter((post) => post.frontmatter?.type === 'job');
-let hotPosts = jobPosts;
-if (Astro.clientAddress) {
-  // SSR fallback: show all jobs if no browser
-} else {
-  // On client, will be replaced by JS
-}
 const recentPosts = allPosts.slice(0, 5);
+const jobPosts = allPosts.filter((post) => post.frontmatter?.type === 'job');
 const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
 ---
 
@@ -32,19 +26,8 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
     <FilterBar categories={categories} />
     <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,70%)_minmax(0,30%)]">
       <div>
-        <div class="my-6 flex justify-center">
-          <span class="inline-block animate-blink-hotjobs rounded-full border-2 border-red-600 bg-white px-8 py-2 text-lg font-bold text-red-700 shadow-md">🔥 হট জবস</span>
-        </div>
         <div id="hot-strip-mount"></div>
-        <style>
-        @keyframes blink-hotjobs {
-          0%, 100% { background: #fff; color: #dc2626; border-color: #dc2626; }
-          50% { background: #dc2626; color: #fff; border-color: #fff; }
-        }
-        .animate-blink-hotjobs {
-          animation: blink-hotjobs 1.2s infinite;
-        }
-        </style>
+          <div id="hot-strip-mount"></div>
         <script>
         // Track job post views in localStorage
         function trackJobView(slug) {
@@ -69,32 +52,28 @@ const { pagedPosts, totalPages } = paginatePosts(allPosts, 1, POSTS_PER_PAGE);
             });
           });
 
-          // Hot Jobs logic
-          const key = 'npbd_job_views';
-          const views = JSON.parse(localStorage.getItem(key) || '{}');
-          const jobs = Array.from(document.querySelectorAll('[data-job-title]')).map(el => ({
-            slug: el.getAttribute('data-job-slug'),
-            title: el.getAttribute('data-job-title'),
-            url: el.getAttribute('href'),
-          }));
-          // Count views
-          jobs.forEach(j => { j.count = (views[j.slug] || []).length; });
-          jobs.sort((a, b) => b.count - a.count);
-          const top10 = jobs.slice(0, 10);
-          while (top10.length < 10 && jobs.length > top10.length) {
-            // Fill with next most recent jobs if less than 10
-            top10.push(jobs[top10.length]);
-          }
-          // Render HotStrip
-          const mount = document.getElementById('hot-strip-mount');
-          if (mount) {
-            mount.innerHTML = top10.map(j => `
-              <a href="${j.url}" class="flex items-center gap-2 rounded-[10px] border border-yellow-300 bg-yellow-50 px-3 py-2 text-[16px] font-semibold text-yellow-900 hover:bg-yellow-100">
-                <span class="rounded bg-red-600 px-2 py-0.5 text-xs text-white animate-blink">হট</span>
-                <span>${j.title}</span>
-              </a>
-            `).join('');
-          }
+    // Hot Jobs logic
+    const key = 'npbd_job_views';
+    const views = JSON.parse(localStorage.getItem(key) || '{}');
+    const jobs = Array.from(document.querySelectorAll('[data-job-slug]')).map(el => ({
+      slug: el.getAttribute('data-job-slug'),
+      title: el.getAttribute('data-job-title'),
+      url: el.getAttribute('href'),
+    }));
+    // Count views
+    jobs.forEach(j => { j.count = (views[j.slug] || []).length; });
+    jobs.sort((a, b) => b.count - a.count);
+    const top10 = jobs.slice(0, 10);
+    // Render HotStrip
+    const mount = document.getElementById('hot-strip-mount');
+    if (mount) {
+      mount.innerHTML = `<div class='hot-strip-dark'>${top10.map(j => `
+        <a href="${j.url}" data-job-slug="${j.slug}" class="flex items-center gap-2 rounded-[10px] border px-3 py-2 text-[16px] font-semibold hover:bg-yellow-900">
+          <span class="rounded px-2 py-0.5 text-xs animate-blink">হট</span>
+          <span>${j.title}</span>
+        </a>
+      `).join('')}</div>`;
+    }
         });
         </script>
         <div id="feed-list" class="space-y-5">
