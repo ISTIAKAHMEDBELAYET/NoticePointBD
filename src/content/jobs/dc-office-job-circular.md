@@ -1,5 +1,4 @@
----
-++ title: "সকল জেলা প্রশাসকের কার্যালয়ে নিয়োগ ২০২৬ – DC Office Job Circular 2026"
+title: "সকল জেলা প্রশাসকের কার্যালয়ে নিয়োগ ২০২৬ – DC Office Job Circular 2026"
 slug: "dc-office-job-circular"
 type: "job"
 categories:
