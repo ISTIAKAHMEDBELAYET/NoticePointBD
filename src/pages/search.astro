@@ -17,7 +17,9 @@ const { pagedPosts, totalPages } = paginatePosts(allJobPosts, 1, POSTS_PER_PAGE)
   description="Find and filter all job circulars by category, deadline, and publish date."
 >
   <section class="my-6">
-    <h1 class="mb-6 text-2xl font-bold text-[#166534]">Search Jobs</h1>
+    <div class="flex justify-center mb-8">
+      <span class="inline-block rounded-full bg-[#166534] px-8 py-3 text-xl font-semibold text-white shadow-lg border-2 border-[#14532d] hover:bg-[#15803d] transition-all duration-200">Search Jobs</span>
+    </div>
     <FilterBar categories={jobCategories} />
     <div class="grid items-start gap-6 lg:grid-cols-[minmax(0,70%)_minmax(0,30%)]">
       <div>
